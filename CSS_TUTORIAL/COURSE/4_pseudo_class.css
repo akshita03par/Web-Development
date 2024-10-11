@@ -1,0 +1,55 @@
+#submit{
+    background-color: palevioletred;
+    color: black;
+}
+
+#reset{
+    background-color: cornflowerblue;
+    color: black;
+}
+
+#submit:hover {
+    background-color: blueviolet;
+    color: white;
+    height: 50px;
+    width: 100px;
+    font-size: large;
+}
+
+#reset:hover {
+    background-color: rgb(184, 31, 105);
+    color: white;
+    height: 50px;
+    width: 100px;
+    font-size: large;
+}
+
+#submit:active {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aquamarine;
+    color: black;
+}
+
+input[type="radio"]:checked + label {
+    color: red;
+    font-weight: bold;
+}
+
+li:nth-of-type(1n) {
+    background-color: black;
+    color: white;
+}
+
+li::first-letter{
+    color: rgb(242, 161, 55);
+    font-size: larger;
+}
+
+p::first-line{
+    color:blue;
+    font-size: larger;
+}
+
+p::selection {
+    background-color: blanchedalmond;
+}

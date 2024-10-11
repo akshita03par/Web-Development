@@ -1,0 +1,48 @@
+--------img--------
+      p>img 
+
+-------para---------
+     p>p>p
+
+------2 tag ek saath-------
+    article+section
+    p+a
+
+-------insert content--------
+    p{this is a para}
+    h{heading}
+    p>loreum7
+
+ --------nest-----
+    p>a
+    p>h
+
+--------create id------    
+      p#para1
+      section#sec1
+
+-------create class-------
+     p.class
+     article.bg
+     section.bg.red.black --------> multiple class  
+
+-------list -------
+     ol>li*3
+     ul>(li>p>a)*2
+    nav>ul>(li>a)*3
+
+
+ ------table-----
+     table>(tr>td*3)    
+     <th>Name</th>
+     <th>Roll-No</th>
+
+-------------grouping--------------
+      p>ul>li*3
+      section>p+p+p   or     section>p*4
+      table>tr>td*2
+      table>(tr>td*2)*3
+
+--------div-------
+      .container
+

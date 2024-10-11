@@ -1,0 +1,28 @@
+#box{
+    height: 100px;
+    width: 300px;
+    background-color: rgb(255, 0, 208);
+    animation-name: Animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out ;
+    animation-delay: 0.5s;
+    animation-iteration-count: 3;
+    animation-direction: reverse;
+
+    animation: Animation 3s ease-in 0s infinite normal;
+
+}
+
+
+@keyframes Animation {
+    from{
+       background-color: rgb(64, 0, 255);
+       width: 300px;
+       font-size: 20px;
+    }
+    to {
+        background-color: rgb(13, 227, 134);
+        width: 400px;
+        font-size: 40px;
+    }
+}

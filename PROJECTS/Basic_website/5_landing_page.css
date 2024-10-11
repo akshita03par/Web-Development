@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height:100%;
+    width:100%;
+    overflow: hidden;
+}
+
+#main{
+    height: 100%;
+    width:100%;
+    background-color: hsl(328, 57%, 57%) ;
+    display: flex;
+   
+}
+
+#part1{
+    height: 100%;
+    width: 26%;
+    /* background-color: red; */
+}
+
+
+#part2{
+    height: 100%;
+    width: 67%;
+    background-color: rgb(21, 0, 255);
+    background-image: url(/PROJECTS/Basic_website/Image/Akshita1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#overlay{
+     height: 100%;
+     width: 100%;
+    
+    
+     background-color: hsla(328, 50%, 74%, 0.332)
+}
+
+#part3{
+    height: 100%;
+    width: 7%;
+    /* background-color: rgb(0, 255, 64); */
+}
+
+#text-div{
+    /* height:300px; */
+    position: absolute;
+    width: 400px;
+    /* background-color: red; */
+    left:7%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+#text-div>h1{
+    font-size:95px;
+    font-family:'monument';
+    font-weight: 900;
+    line-height: 78%;
+    color: #fff;
+    text-transform: uppercase;
+} 
+
+#small-img{
+    height: 390px;
+    width: 280px;
+    background-color: aquamarine;
+    background-image: url(/PROJECTS/Basic_website/Image/Akshita3.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top:50%;
+    right: 5%;
+    transform: translate(0,-50%);
+}
+
+
+#overlay-in{
+    height: 100%;
+    width: 100%;
+    background-color: hsla(329, 30%, 73%, 0.258)
+}
+
+#vertical-txt{
+         position: absolute;
+         transform: rotate(90deg);
+         /* width: 100%; */
+         /* background-color: antiquewhite; */
+         right: -50%;
+         top:-7%;
+         transform-origin: 0% 0%;
+
+}
+
+#vertical-txt h1{
+       font-size: 60px;
+       font-weight: 900;
+       text-transform: uppercase;
+       font-family: 'monument';
+       color: transparent;
+       letter-spacing: 15px;
+       /* transform: rotate(90deg); */
+       -webkit-text-stroke-width:2px ;
+       -webkit-text-stroke-color:#ffffffa2 ;
+}
+
+#navbar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+    left:7%;
+    top:5%;
+    
+}
+
+#navbar img{
+    height:80px;
+
+}
+
+#navbar h5{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+}

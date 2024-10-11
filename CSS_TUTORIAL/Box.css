@@ -1,0 +1,33 @@
+p{
+    height: 50px;
+    background-color: deeppink;
+    width: 500px;
+    border-width: 5px;
+    border-style: double;
+    border-color: rgb(0, 0, 0);
+    padding-right:100px;
+    margin-right: 20px;
+    
+}
+
+h1{
+    background-color:red;
+    color: aliceblue;
+    border-color:black;
+    border-style: solid;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    width: 500px;
+    border-radius: 50%;
+    height: 50px;
+   
+}
+
+#id{
+    border:5px solid rgb(65, 219, 219);
+    background-color: bisque;
+    font-style: italic;
+    height:110px
+   
+}

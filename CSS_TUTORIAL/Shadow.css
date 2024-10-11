@@ -1,0 +1,28 @@
+.container{
+    background-color:beige;
+    height: 600px;
+    border: 2px solid black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color:rgb(247, 151, 226);
+    height: 330px;
+    width: 330px;
+    border: 2px solid black;
+    margin:8px;
+    box-shadow: 10px 15px 10px 10px rgba(98, 97, 97, 0.462);
+    
+}
+
+img{
+    height: 100px;
+    width: 100px;
+   
+}
+
+h2{
+    text-shadow: 5px 3px 1px rgb(141, 135, 135);
+}

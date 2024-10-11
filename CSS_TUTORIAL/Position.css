@@ -1,0 +1,39 @@
+div{
+       height: 200px;
+       width: 200px;
+       /* background-color: chocolate; */
+       border: 2px solid black;
+       display: inline-block;
+}
+#box1{
+    background-color: orangered;
+    position: sticky;
+    top: 0;
+    /* jese hi scroll karne par top par ayega fixed ho jayega box  */
+
+}
+
+#box2{
+      background-color: aliceblue;
+      position:relative;
+      top:30px;  
+      /* niche ke side shift hoga */
+      left: 20px;
+      /* right ki side shift hoga  */
+       z-index: 3;
+}
+
+#box3{
+   background-color: blue;
+   position: absolute;
+   top: 50px;
+   /* body tag se ho raha hai mean full screen  */
+}
+
+#box4{
+    background-color: green;
+    position:fixed;
+    /* scroll karne ke baad bhi fix rahega  */
+    bottom: 0%;
+    width: 100%;
+}

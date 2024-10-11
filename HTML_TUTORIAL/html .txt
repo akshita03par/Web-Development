@@ -1,0 +1,98 @@
+page layout techniques 
+
+using semantic tags for layout 
+<header>
+<main>
+<footer>
+
+----------------------------------------------
+inside <main >tag 
+<section> ---- for a section on our page 
+<article>---- for an article on your page 
+<Aside> ----- for content aside main content <ads>
+
+----------------------------------------------------------------
+achor tag 
+<a href ="htttp://google.com"target="_main">Google</a>
+
+target=-main ------> open in new link 
+
+-------------------------------------------------------------------------
+
+<div>------>takes full width (block element )
+<span>-------> takes full width as per size (inline element )
+
+-------------------------------------------------------------------------
+LIST -------(<li>)
+   ordered ----->(<ol>)
+     1234.....
+     I II III IV.......
+
+    unordered ------>(<ul>)
+    . . . . bullents point 
+
+--------------------------------------------------------
+TABLE
+<tr>-------> display(row)
+<td>------->display(data)
+<th>------->display(header)
+
+<thread>------> table head 
+<tbody>-------> table body 
+
+colspan -----combine column 
+rowspan------combine row 
+--------------------------------------
+form
+   sign up, login , contact a ......
+
+   <form action="/action.php">
+   
+     FORM ELEMENT 
+ <input type="text" placeholder="enter name ">
+
+    LABEL 
+<input type="radio" value="class X" name="class" id="id1">
+
+-------------------------------------------
+
+CLASS & ID 
+<div id="id1">class="group1">
+</div>
+<div id="id2">class="group1">
+</div>
+
+--------------------------------------
+CHECK BOX 
+
+<label for="id1">
+      <input type="checkbox" value="classX "name="class" id="id1">
+</label>
+-----------
+  FEEDBACK 
+-----------------------------
+
+   SELECT 
+    <select name="city" id="city">
+      <option value="indore"> Indore </option>
+
+  --------------------------
+   iframe tag 
+   -------------------
+  VIDEO TAG 
+
+  <video src="myvid.mp4">my video</video>
+  
+  --------------------------
+  <b> same as <strong>
+  but strong added a meaning and importance of word 
+
+  <i> same as <em> (meaning)
+
+  <s> strike 
+  ---------------------
+   to hide a answer
+  <details>
+                <summary>what is your name ?</summary>
+                <p>My name is Akshita Parmar</p>
+            </details>

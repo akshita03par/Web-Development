@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend> HTML FORM </legend>
+        <label for="email">Enter Email</label>
+        <input type="text" id="email" placeholder="Enter your email ">
+        <br>
+        <br>
+        <label for="password">Enter password</label>
+        <input type="password" id="password" placeholder="Enter your password">
+         <br>
+         <br>
+        <input type="submit" value="Submit"><input type="reset" value="Reset">
+         <br>
+         <hr>
+         <br>
+        <!-- <br>  date and time  -->
+        <label for="datepicker">Choose Date:</label>
+        <input type ="date" id="datepicker"> or <br><br>
+        <label for="date-timer">Choose Date and time:</label>
+        <input type="datetime-local" id="date-time">
+        <br>
+        <br>
+         <!-- select time  -->
+         <label for="time">Choose time:</label>
+         <input type="time" id="time">
+         <br>
+         <br>
+          <!-- select month  -->
+          <label for="month">Choose Month:</label>
+          <input type="month" id="month">
+          <br>
+          <br>
+          <!-- select week -->
+          <label for="week">Choose Week:</label>
+          <input type="week" id="week">
+          <br>
+          <br>
+          <button>Submit button </button>
+         <br>
+         <hr>
+         <br>
+         <!-- ----------------- -->
+        <label for="selector1">Choose your favourite dish</label>
+        <select name="dishes" id="selector1"> 
+            <option value="maggi">Maggi</option>
+            <option value="pasta">Pasta</option> 
+            <option value="noodles">Noddles</option>
+        </select>
+        <br>
+         <p>
+            Select you vechile ---
+        <br>
+        <input type="checkbox" id="car" name="car" value="car">
+        <label for="car">I have a car </label>
+        <br>
+         <input type="checkbox" id="bike" name="bike" value="bike">
+         <label for="car">I have a car </label>
+         <br>
+        <input type="checkbox" id="bicycle" name="bicycle" value="bicycle">
+        <label for="bicycle">I have a bicycle</label>
+         </p>
+         <p>
+            Select Your Gender------<br>
+            <input type="radio" id="radio" name="class">
+            <label for="radio">Female</label>  
+            <br>
+            <input type="radio" id="radio1" name="class">
+            <label for="radio1">Male</label>
+            <br>
+            <input type="radio" id="radio2" name="class">
+            <label for="radio1">Others</label>
+         </p>
+         <label for="file">Upload File:</label>
+         <input type="file" id="file" name="file">
+         <br>
+         <br>
+         <input type="image" name="image" id="image" alt="Akshita Image" src="image/Akshita .jpg" height="250">
+        <br>
+        <hr>
+        <br>
+        <textarea name="textarea1" id="textarea1" cols="30" rows="10" placeholder="Enter a textarea"></textarea>
+    
+    </fieldset>
+    </form>
+</body>
+</html>
+

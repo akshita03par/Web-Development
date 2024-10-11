@@ -1,0 +1,34 @@
+p{
+    text-align: center;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+h1{
+    text-align: center;
+    text-decoration: red dotted underline;
+}
+a{
+    text-decoration: none;
+}
+#h1{
+    font-weight: normal;
+}
+#h2{
+    font-weight: bold ;
+}
+#h3{
+    font-weight: lighter;
+}
+#h4{
+    font-weight: 100;
+}
+#one{
+    font-family : arial;
+}
+#two{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#font{
+    font-size: 40px;
+}

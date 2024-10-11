@@ -1,0 +1,25 @@
+#img1{
+    float: right;
+    height:20rem;
+    width: 40vw;
+}
+
+#img2{
+    float: left;
+    height:60 rem;
+    width: 30vw;
+}
+
+#img3{
+    float: right;
+    height:10rem;
+    width: 20vw;
+}
+
+#img4{
+    float: right;
+    height:30 rem;
+    width: 15vw;
+    clear:right;
+}
+

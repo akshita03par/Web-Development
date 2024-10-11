@@ -1,0 +1,149 @@
+------------------- BASICS ----------------------
+
+1) Console.log ====> used to print a message .
+           Console.log("Akshita");
+
+2) VARIABLES =====>
+        name = "Akshita";
+        console.log(name);
+
+        x= null;  (pata nahi iske andar kya hai)
+        y= umdefined;   (pata to hai kya hai par khali value hai  )
+
+BOOLEAN TYPE -------->  isfollow = false;
+                        console.log(isfollow);
+
+    ......... IT IS DYNAMICALLY TYPE ............  
+
+    DECLARTION ------------      
+
+3) var ===> variable can be redeclared and updated .A global scope variable .
+
+   let ===> variable cannot be redeclared and but can be  updated . A block scope variable.
+
+   const===> variable cannot be redeclared and updated . A block scope variable.
+
+4) DATA TYPES ---------------------------------->
+
+  there are 7 primitive data types ===>
+  NUMBER , STRING , BOOLEAN , UNDEFINED , NULL , BIGINT , SYMBOL 
+
+5)OBJECTS-------------------------------->
+  COLLECTION of different variables 
+  const student = {
+    name : "Priya",
+    age : 21 ,
+    cgpa : 7.2,
+    isPass: true ,
+};
+
+  "string"+ 1 ;=====> string1
+
+6)OPERATORS
+   1)arthmetic operator ---->+,-,*,/,%,**(exponentiation)
+
+   2)unary operator--------->
+            a++---->(postincrement) baad mai value change karta hai 
+            ++a---->(preincrement) pahale value change hogi 
+            a-- ---->(postdecrement) pahale decrement hoga baad mai value change hogi 
+            --a ---->(predecrement)pahale value change hogi fir drement hoga 
+
+   3)Assignment operator---->
+     =,+=,**=
+
+   4)Comparison operator---->
+     ==,<,>,<=,>=,!==,===
+      ===  strict version it check in deeply 
+
+   5)Logical operator------->
+        Logical AND ---> both are true hona chahiye 
+        LOgical OR ----> any one or both true 
+        LOgical NOT ----> opposite 
+
+7) Conditional Statements------>
+      if , if else , else if
+
+      TERNARY OPERATOR --->  condition ? true output : false output;
+
+8)PROMPT and ALERT--------->
+     alert("hello"); // one time show 
+
+     let name = prompt("hello");
+     console.log(name);  // take input by user 
+
+9)LOOPS------>
+
+    for loop , while loop, do while loop , for of loop ,for in loop
+
+10)STRINGS------------->immutable 
+   string is a sequence of characters used to represent text
+
+      CREATE STRING -----> let str="akku";
+      STRING LENGTH -----> str.length;
+      STRING INDICES-----> str[0],str[3];
+
+TEMPLATE LITERALS ----->
+    a way to have embeddes exptessions in strings 
+      `this is a template literals`
+
+STRING INTERPOLATION -----> to create strings by doing substitution of placeholders       
+          ` string text ${expression} string text`
+          
+STRING METHODS ------->
+    1) str.toUpperCase() --->it doesnot change original value , it give new return value 
+    2) str.toLowerCase(),
+    3)str.trim()---->it removes whitespaces form the starting and ending string 
+    4) str.slice(start,end?)---> returs part of string (start will count and end index is not count-- non inclusive )
+    5)str1.concat(str2)--->str1.concat(str2)
+    6) str.replace(searchVal,newVal),
+    7) str.charAt(idx)
+
+11)ARRAY------------------------------------------->
+   collection of items ,it is not any type ,array has itself an object 
+ 
+   looping over an array 
+    // loops -> iterable(strings,objects,arrays)
+
+         let marks =[96,75,48,83,66];
+
+   ARRAY INDICES ---> arr[1],arr[2]
+
+   LOOping over an array ----> print all elements of an array 
+
+
+   ARRAY METHODS ----------------------------------->
+   1) PUSH()----> add to end 
+   2)pop()----> delete from end and return 
+   3)toString()----> converts array to string 
+   4)concat()----> joins multiple array and return result
+   5)unshift()---->add to start
+   6)shift()---->delete from start and return 
+   7)slice()---->returns a piece of the array 
+         slice(startIdx,endIdx)
+   8)splice()---->change original array (add,remove,replace)
+         splice(startIdx,delCount,newElement)
+  
+12)FUNCTIONS ---------------------------->
+   block of code that performs a specific task , can be invoked whenever needed 
+
+   function definition  and function call 
+
+13)ARROW FUNCTIONS------------------->
+   compact way of writing a function 
+
+  const functionName =(param1,param2...)=>{
+
+  };
+
+14)ForEach LOOP IN ARRAY -----> it is method 
+    arr.ForEach(callback function)
+     #callback function :- here, it is  a function to execute for each element in the array 
+     # A callback function passed as an argument to another function .
+
+     arr.ForEach((val)=>{
+      console.log(val);
+     })
+
+15)
+
+
