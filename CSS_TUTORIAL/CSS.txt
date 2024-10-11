@@ -1,0 +1,310 @@
+-------------------TEXT PROPERTIES----------
+1) text-align -------------------------------------------->
+
+        text-align: left/right/center/start/end
+          ---------------------------
+        (basically lan start with left to right ) 
+         English ,hindi etc----------------
+         left=start
+         right=end
+        (lan start with right to left )------urdu,etc
+         left=end
+         right=start
+2)text-decoration------------------------------------------>
+
+        text-decoration: underline/overline/line-through
+        underline ke saath color aur line type bhi de sakte hai
+
+3)text-weight---------------------------------------------->
+
+        font-weight:normal/bad/bolder/lighter
+        font-weight:100-900
+
+ 4)font-family--------------------------------------------->
+
+        font-family:arial     
+        font-family:arial,roboto    
+
+=================================================================
+-------------------ABSOLUTE------------------------
+UNITS----------96px = 1 inch 
+line-height-------------space between line 
+
+
+5)text-transform------------------------------------------>
+
+        text-transform:uppercase/lowercase/capitalize/none
+
+*************************************************************************************************
+
+-----------------------BOX MODEL----------------
+
+1)Height-------------------------------------------------->
+        height:30px;  (content height)
+
+2)Width-------------------------------------------------->
+        width:30px;   (content width)
+
+ 3)Border----------------------------------------------->
+        border-width:2px;
+        border-style:solid/dotted/dashed
+        border-color:black;
+      
+        SHORTHAND---------
+
+        border:2px solid black;
+
+        border-radius:20px  ( round te corner)
+
+4)Padding----------------------------------------------->
+        padding-left
+        padding-right
+        padding-top
+        padding-bottom
+
+        SHORTHAND
+
+        padding:1px 2px 3px 4px;
+            top|right|bottom|left--> clockwise
+
+5)Margin----------------------------------------------->
+        margin-right      
+        margin-left  
+        margin-top
+        margin-bottom  
+
+*******B0X-SIZING:BORDER-BOX (It does not exttend box size)************  
+
+***************************************************************
+----------------DISPLAY PROPERTY-------------------------
+ display:Inline/block/inline-block/none 
+
+ inline- no margin /padding 
+ block- full space 
+ inline-block: margin and padding (required space )
+ none-to remove element (no space reserved)
+
+           ------VISIBILITY------
+
+           visibility:hidden;
+           (space reserved)
+
+-----------------------------------------------
+RGBA------->rgba(255,0,0,0.5)
+a (opacity btata hai )------------>range 0 to 1
+
+*****************************************************************
+--------------------UNITS IN CSS---------------------------------
+
+Relative---------------------------->
+
+1) % (percentage)----> size as relative to an elements parent
+                     width:33%
+
+2) em ------>realtive to parent font size use (1em)
+                                       use(2em)-----double to parent size 
+
+          width:5em (means fontsize of itself ke 5 times double )          
+
+3) rem (Root em )------------->font size if the root elemennt .
+
+4)vh: relative to 1% viewport height 
+
+5)vw: relative to 1% viewport width 
+
+****************************************************************************************
+------------------------POSITION----------------------------   
+1)static-----> default position 
+              (top,right,bottom,left,zi-index ---no effect)
+
+2)relative----->element is relative to itself          
+                 (top,right,bottom,left,zi-index -----will work )
+
+3)absolute----->positioned relative to its closest positioned ancestor(removed from the flow)    
+                (non-static)                                 (purwaj)
+
+4)fixed------->positioned relative to browser (removed from flow )
+
+5)sticky------->positioned based on users scroll position 
+
+          ******************Z-INDEX***********************
+
+    z-index:auto(0)
+    z-index:1/2/.....(prority increase) upar aayega---and also for move left side 
+    z-index:-1/-2/.....(decrease) niche aayega ---- move right side 
+ 
+  =======>( pahale wala hamesha under ho jayega aur dusra over ho jayega)
+         control karne ke liye use hota hai 
+
+ ----------------------------------------------------------------------
+                  BACKGROUND-IMAGE
+        background-image:url(set path)------------>big image display so we use 
+
+                  BACKGROUND-size
+         background-size:cover/contain/auto         
+           cover------>cover full BACKGROUND
+           contain----->contain full image and in empty space repeat image 
+                     remove repeatation of image   
+                background-repeat:no-repeat   
+
+***********************************************************************************
+---------------------FLEX BOX---------------------------------
+
+1)FLEX-DIRECTION
+        @flex-direction:row;(default)--------------mainaxis=row ----->left to right (1,2,3,4,5     )
+        @flex-direction:row-reverse;--------------mainaxis=row------>right to left (first box in right to left (     5,4,3,2,1))
+        @flex-direction:column;----------mainaxis =column------->top to bottom
+        @flex-direction:column-reverse;---------mainaxis=column----->bottom to top 
+           
+           box size badane ke baad bhi box container mai hi rahege apni six=ze chhoti badi karke jab tak ki
+           unke andar ka content allow karta hai it means box ke andar ke content (text) size allow karta
+
+
+2)FLEX PROPERTIES (for flex container )
+
+   A) JUSTIFY-CONTENT:aligment along the main tag 
+             flex-start------->element in left to right
+             flex-end-------->element in right to left(but no direction change (1,2,3,4,5) hi rahega )
+             centre---------->element in centre 
+             space-evenly----->space evenly separated
+             space-around----->space in left and right side of box 
+             space-between---->space in between boxes
+
+   B)FLEX-WRAP:nowrap/wrap/wrap-reverse 
+
+   c)align-items:aligment along the cross axis
+
+   D)align-content:aligment of space between and around the content along cross axis  
+
+3)FLEX PROPERTIES (for flex item )   
+
+   A)align-self: aligment of individual along the cross axis .
+
+   b)flex-grow: how much a flex item will grow relative to the rest of the flex items if space is available 
+
+   C)flex-shrink: how much a flex item will shrink relative to the rest of the flex item if space is available
+
+***************************************************************************************************************************************
+----------------------MEDIA QUERIES-------------------------
+
+help for responsive website----->
+
+@media (width:600px){
+        div{
+                background-color:red;
+        }
+}
+
+@media (min-width:600px){
+        div{
+                background-color:red;
+        }
+}
+
+combine----->
+
+@media (min-width:200px)and(max-width:300px){
+        div{
+                background-color:red;
+        }
+}
+
+************************************************************************************************************************************
+---------------------TRANSITION----------------------------
+
+transition-property: property you want to transition (font-size, witdth etc)----steops(2)
+
+transition-duration: 2s/4ms....
+
+transition-timming-function: ease-in/ease-out/linear/steps....
+
+transition-delay:2s/4ms......
+
+--------------------------------------------------------------
+       TRANSITION SHORTHAND
+
+property name | dutration | timing-function| delay 
+
+       transition: font-size 2s ease-in-out 0.2s;
+
+***********************************************************************************************************************************
+------------------TRANSFORM------------------------
+
+1)rotate ------>
+      transform:rotate(45deg);
+
+      roate:45deeg;
+      roateX:45deeg;
+      roateY:45deeg;
+      roateZ:45deeg;
+
+2)scale-------->
+      transform:scale(2);
+      transform:scale(0.5);
+      transform:scale(1,2);
+      transformX:scale(0.5);
+      transformY:scale(0.5);
+
+3)translate----->
+        transform:translate(20px);
+        transform:translate(20px , 50px);
+        transform:translateX(20px);
+        transform:translateY(20px);
+
+4)skew------>
+        transform:skew(30deg);
+
+**********************************************************************************
+----------------ANIMATION----------------------
+
+@keyframe myName{
+        from{
+                font-size:20px;
+        }
+        to{
+                font-size:40px;
+        }
+}
+
+FOR APPLY ANIMATION USE ANIMATION PROPERTIES:------------
+
+1)animation-name
+2)animation-duration;
+3)animation-timing-function;
+4)animation-delay;
+5)animation-iteration-count;
+6)animation-direction;
+
+---------------------SHORTHAND------------
+
+animation: myName 2s linear 3s infinite normal 
+
+------------% IN aNIMATION----------------
+
+@keyframe myName{
+        0%{font-size:20px;}
+        50%{font-size : 30px;}
+        100%{font-size :40px;}
+}
+
+-------------------------------------------------------------------
+inline ,internal and external
+     we use (! Important)in internal ----->so prority is set for internal 
+
+
+-----------------------------------------------------------------
+              BOX-SHADOW 
+
+box-shadow-----> height , width , length of shadow  , area of shadow , color
+
+      it can negative also for direction change 
+
+----------------------------------------------
+CUSTOM TAG ----------------->
+
+--primary-color:red;
+--custom-width:330px;
+width:var(--custom-width);
+
+
+     

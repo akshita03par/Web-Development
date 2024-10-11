@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="https://www.google.com/search?q=apple&oq=apple">
+     <input type="text" placeholder="Search in google " name="q" >
+    <input type="Submit">
+    </form>
+    <br/>
+    <hr/>
+    <form action="/action">
+        <h1>Registration Form</h1>
+         
+        <div>
+        <label for="Firstname">First Name : </label>
+        <input type="text" name="Firstname" id="Firstname" placeholder="First Name">
+
+        <label for="Lastname">Last Name : </label>
+        <input type="text" name="Lastname" id="Lastname" placeholder="Last Name">
+        </div>
+        
+        <div>
+        <label for="gender">Please select gender:</label>
+        <select name="gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female"> Female</option>
+            <option value="Others">Others</option>
+        </select>
+       </div>
+       
+        <div>  
+            Do you agree to all terms of service? :
+        <input type="checkbox" id="tos_agree" name="tos_agree" checked/ > 
+        <label for="tos_agree"> yes , I agree </label>
+        </div>
+
+        <div>
+           <button>Register</button>
+        </div>
+        
+    </form>
+</body>
+</html>

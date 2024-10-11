@@ -1,0 +1,46 @@
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: blanchedalmond;
+    border: 2px solid black ;
+    /* transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s; */
+    transition:all 2s ease-in-out 1s;
+}
+
+.box:hover{
+    background-color: goldenrod;
+    color:darkgreen;
+    font-size: 20px;
+    
+}
+
+.box:active{
+    background-color: blue;
+    color: black;
+}
+
+.box2{
+    height: 300px;
+    width: 300px;
+    background-color: rgba(220, 55, 220, 0.826);
+    border: 2px solid black;
+    transition-property: all;
+    transition-duration: 4s;
+    transition-delay: 0.5s;
+    transition-timing-function: linear;
+}
+
+.box2:hover{
+    height: 600px;
+    width: 600px;
+    background-color: rgba(237, 183, 46, 0.944);
+    font-size: 50px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
