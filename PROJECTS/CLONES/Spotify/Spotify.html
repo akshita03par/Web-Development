@@ -167,21 +167,31 @@
           </div>
         </div>
         <div class="footer">
-          <div class="line">
-
-          </div>
+          <div class="line"></div>
         </div>
       </div>
       <div class="music-player">
         <div class="album">
-          <img src="" alt="">
+          <div class="album-controls">
+            <img src="./images/music-play.png" alt="" class="music-img" />
 
-          <p>Daylight</p>
-          <p>David Kushnar</p>
+            <div class="music-para">
+              <p class="music-p1">Daylight</p>
+              <p class="music-p2">David Kushnar</p>
+            </div>
 
-          <div class="album-icons">
-            <img src="./images/foot-icon11.png" alt="" class="player-control-icon">
-            <img src="./images/foot-icon12.png" alt="" class="player-control-icon">
+            <div class="album-icons">
+              <img
+                src="./images/foot-icon11.png"
+                alt=""
+                class="music-control-icon"
+              />
+              <img
+                src="./images/foot-icon12.png"
+                alt=""
+                class="music-control-icon"
+              />
+            </div>
           </div>
         </div>
 
@@ -200,6 +210,7 @@
               src="./images/foot-icon3.png"
               alt=""
               class="player-control-icon"
+              style="opacity: 1"
             />
             <img
               src="./images/foot-icon4.png"
@@ -214,12 +225,30 @@
           </div>
           <div class="playback-bar">
             <span class="curr-time">00:00</span>
-            <input type="range" min="0" max="100" class="progress-bar">
+            <input
+              type="range"
+              min="0"
+              max="100"
+              class="progress-bar"
+              step="1"
+            />
             <span class="tot-time">3:33</span>
           </div>
         </div>
 
-        <div class="controls"></div>
+        <div class="controls">
+          <div class="controls-panel">
+            <div class="controls-img">
+              <img src="./images/foot-icon6.png" alt="" class="control-panel-icon">
+              <img src="./images/foot-icon7.png" alt="" class="control-panel-icon">
+              <img src="./images/foot-icon8.png" alt="" class="control-panel-icon">
+              <img src="./images/foot-icon9.png" alt="" class="control-panel-icon">
+              <img src="./images/foot-icon10.png" alt="" class="control-panel-icon">
+
+              <input type="range" min="0" max="100" step="1" class="control-bar">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
