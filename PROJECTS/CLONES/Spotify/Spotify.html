@@ -20,7 +20,7 @@
       <div class="sidebar">
         <!-- nav -->
         <div class="nav">
-          <div class="nav-option" style="opacity: 1;">
+          <div class="nav-option" style="opacity: 1">
             <i class="fa-solid fa-house"></i>
             <a href="#">Home</a>
           </div>
@@ -34,22 +34,56 @@
         <div class="library">
           <!-- options -->
           <div class="options">
-            <div class="lib-option">
-             <img src="./images/library.png" alt="">
+            <div class="lib-option nav-option">
+              <img src="./images/library.png" alt="" />
               <a href="#">Your Library</a>
             </div>
             <!-- icons -->
             <div class="icons">
-                 <i class="fa-solid fa-plus"></i>
-                 <i class="fa-solid fa-arrow-right"></i>
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
             </div>
           </div>
           <!-- boxes -->
-          <div class="boxes"></div>
+          <div class="lib-box">
+            <!-- box-1 -->
+            <div class="box">
+              <p class="box-p1">Create your first playlist</p>
+              <p class="box-p2">It's easy , we'll help you</p>
+              <button class="badge">Create playlist</button>
+            </div>
+
+            <!-- box-2 -->
+            <div class="box">
+              <p class="box-p1">let's find some podcasts to follow</p>
+              <p class="box-p2">We'll keep you updated on new episodes</p>
+              <button class="badge">Browse podcasts</button>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="main-content"></div>
+      <div class="main-content">
+        <!-- nav -->
+        <div class="sticky-nav">
+          <div class="sticky-nav-icons">
+            <img src="./images/backward-icon.png" alt="" />
+            <img src="./images/forward-icon.png" alt="" />
+          </div>
+
+          <div class="sticky-nav-options">
+          <button class="badge nav-items">Explore Premium</button>
+          <button class="badge nav-items dark-badge">
+            <i class="fa-regular fa-circle-down" style="margin-right:5px ;"></i>Install App
+          </button>
+          <i class="fa-regular fa-user nav-items"></i>
+          </div>
+        </div>
+
+        <!-- album card -->
+
+        <div class="cards"></div>
+      </div>
       <div class="music-player"></div>
     </div>
   </body>
