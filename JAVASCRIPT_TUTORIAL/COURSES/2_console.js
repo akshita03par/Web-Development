@@ -8,5 +8,9 @@ console.log(num);
 
 console.log("Akshita", "Parmar" , num , (1+5));
 
+let a = 34;
+let b = 45;
 
+sum = a + b;
+console.log(sum);
 
