@@ -14,3 +14,22 @@ let b = 45;
 sum = a + b;
 console.log(sum);
 
+// templates literals------------------------
+
+let pencilPrice = 10;
+let eraserPrice = 5;
+
+// console.log("the total price is : ",pencilPrice + eraserPrice , "Rupees.")
+
+// let output = "the total price is : "+ (pencilPrice + eraserPrice ) + " Rupees.";
+// console.log(output);
+
+let output = `The total price is : ${pencilPrice + eraserPrice } Rupees .`;
+console.log(output);
+
+
+
+
+
+
+
