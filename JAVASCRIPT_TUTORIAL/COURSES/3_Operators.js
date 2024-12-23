@@ -1,7 +1,7 @@
 let x = 10;
 let y = 5;
 
-// Arthmetic operators 
+// Arthmetic operators-----(+,-,*,/,%,**)
 
 console.log(x+y);
 console.log(x-y);
@@ -10,10 +10,16 @@ console.log(x/y);
 console.log(x%y);
 console.log(x**y);
 
-// unary operator
+// unary operator------(++,--)
 
-console.log(x++);
-console.log(++x);
+console.log(x++); //10
+console.log(++x); //12
 
 
-// Assignment operator
+// Assignment operator------(=,+=,-=,/=,%= etc)
+console.log('x is:',x);
+console.log('y is:',y);
+x+=y ;
+console.log(x);
+
+// comparison operators-----
