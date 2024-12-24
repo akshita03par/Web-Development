@@ -60,3 +60,39 @@ console.log(x--) //36
 
 console.log(--x) // 34
 
+// strings -----------------------------
+
+let name = 'Akshita Parmar';
+console.log(name);
+console.log(typeof(name));
+
+// string Indices ------------------
+
+console.log(name[0]);
+console.log(name[1]);
+console.log(name[2]);
+console.log(name[3]);
+console.log(name[4]);
+console.log(name[5]);
+console.log(name[6]);
+
+console.log(name.length); //14
+
+console.log(name.length-4); //10
+
+console.log(typeof(name.length));  //number
+
+console.log(name[name.length-1]);  //r
+
+console.log(name[name.length-5]);  //a
+
+//concatenation 
+
+console.log("Akshita"+7); 
+
+let firstName = "Akshita";
+let lastName = "Parmar";
+
+let fullName = firstName + " " +lastName;
+console.log(fullName);
+
