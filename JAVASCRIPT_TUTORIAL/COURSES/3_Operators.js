@@ -24,3 +24,21 @@ console.log(x);
 
 // comparison operators-----
 
+let age = 21;
+console.log(age>16); //true
+
+console.log(age==21);//true
+console.log(age!=21); // false
+
+let str = '21'; // string
+console.log(age==str); // true 
+
+console.log(age===str); // false
+
+// comparison for non numbers ---------
+
+console.log('a'>'A'); // true
+console.log('a'<'A'); //false
+
+
+
