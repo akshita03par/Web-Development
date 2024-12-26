@@ -100,3 +100,23 @@ if( (str[0]==='a') && (str.length > 3)){
     console.log("not a good string");
 }
 
+// switch statement ----------------------------
+
+let color2 = "green";
+ 
+switch(color2){
+    case "red":
+        console.log("Stop");
+        break;
+    case "yellow":
+        console.log("Slow Down");
+        break;  
+     case "green":
+         console.log("Go");
+         break;
+    default:
+        console.log("Broken Light");
+            
+}
+
+
