@@ -40,5 +40,7 @@ console.log(age===str); // false
 console.log('a'>'A'); // true
 console.log('a'<'A'); //false
 
+// Logical Operators 
+
 
 
