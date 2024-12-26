@@ -40,7 +40,54 @@ console.log(age===str); // false
 console.log('a'>'A'); // true
 console.log('a'<'A'); //false
 
-// Logical Operators 
+// Logical Operators -------------------
 
+// AND
+console.log(5>3 && 3>1); // true 
 
+let marks = 90;
 
+if(marks >= 33 && marks >= 80 ){
+    console.log("pass");
+    console.log("A+");
+}
+
+//OR 
+
+if(marks >= 33 || marks >= 80 ){
+    console.log("pass");
+    console.log("A+");
+}
+
+// NOT
+
+if(! marks < 33 ){
+    console.log("pass");
+    console.log("A+");
+}
+
+if(marks > 33 && marks <= 80 || !false){ // avoid 
+    console.log("pass")
+}
+
+// truthy & falsy 
+
+if(true){ // 1 
+    console.log("it has true value");
+}else{
+    console.log("it has false value");
+}
+
+if(false){ //0 , null , undefined
+    console.log("it has true value");
+}else{
+    console.log("it has false value");
+}
+
+let num = -10 ;
+
+if(num){
+    console.log("num is not equal to 0 ");
+}else{
+    console.log("num is equal to 0 ");
+}
