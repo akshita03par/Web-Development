@@ -52,3 +52,23 @@ console.log(str.replace("o","x").replace("o","x"));//IlxveCxding
 
 console.log(name.repeat(2)); //Akshita ParmarAkshita Parmar
 
+
+// pratice 
+
+// trim and uppercase
+
+let Msg = "help!";
+ let newMsg = Msg.trim().toUpperCase();
+ console.log(newMsg);
+
+// slice,indexof,replace
+
+let Name="ApnaCollege";
+
+console.log(Name.slice(4,9)); //Colle
+console.log(Name.indexOf("na")); //2
+console.log(Name.replace("Apna","Our")); //OurCollege
+
+//
+console.log(Name.slice(4).replace("l","t").replace("l","t"));
+
