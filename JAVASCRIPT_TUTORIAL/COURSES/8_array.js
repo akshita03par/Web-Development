@@ -70,3 +70,23 @@ let followers =["a","b","c"];
 let blocked = followers.shift();
 console.log(followers);
 console.log(blocked);
+
+// change array 
+
+let months= ["january","july","march","august"]
+console.log(months);
+
+console.log(months.shift());
+console.log(months.shift());
+console.log(months.unshift("june"));
+console.log(months.unshift("july"));
+console.log(months);
+
+// 5 indexof 
+let primary =["red","yellow","blue"];
+
+console.log(primary.indexOf("yellow")); //1
+console.log(primary.indexOf("green"));  //-1
+
+
+
