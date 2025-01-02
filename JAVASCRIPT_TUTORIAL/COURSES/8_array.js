@@ -187,3 +187,21 @@ console.log(languages);
 
 console.log(languages.reverse().indexOf("javascript")); //4
 
+// ARRAY REFERENCES (address in memory)------------------------
+
+console.log("Array References-------------------------------");
+
+let arr1 =[1];
+let arr2 =[1];
+
+console.log(arr1===arr2); // false (address are different)
+
+let arr =["a","b","c"];
+let arrCopy = arr;
+
+console.log(arr===arrCopy); //true (address are same )
+console.log(arr.push("d"));
+console.log(arr);
+console.log(arr===arrCopy);// true
+console.log(arrCopy);
+
