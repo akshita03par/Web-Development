@@ -205,3 +205,31 @@ console.log(arr);
 console.log(arr===arrCopy);// true
 console.log(arrCopy);
 
+// constant array -----------------------
+
+const Arr = [1,2,3];
+console.log(Arr);
+
+console.log(Arr.push(4));
+console.log(Arr); 
+
+// let Arr = [1,2,3]; // give error 
+
+
+// NESTED ARRAY --------------------------
+
+let Nums =[[2,4],[3,6],[4,8]];
+console.log(Nums);
+console.log(Nums.length); //3
+console.log(Nums[0].length); //2
+console.log(Nums[0][1]); //4
+
+//practice  tic-tac-toe game 
+
+let game=[['X',null,'O'],[null,'X',null],['O',null,'X']];
+console.log(game);
+
+console.log((game[0][1])='O');
+console.log(game);
+
+
