@@ -248,3 +248,72 @@ let Greet = function() {
 
 multipleGreet(Greet,10);
 
+//  HIGHER ORDER FUNCTION (RETURN)
+
+// let odd = function(n){
+//     console.log(!(n%2 == 0));
+// }
+
+// console.log(odd(5)); //true
+
+// let even = function(n){
+//     console.log((n%2 == 0));
+// }
+
+// console.log(even(50));
+
+// OddEven test 
+
+function oddEvenTest(request){
+    if(request == "odd"){
+         return function(n){
+            console.log(!(n%2 == 0));
+        }
+    }else if(request == "even"){
+        return function(n){
+            console.log((n%2 == 0));
+        }
+    }else{
+        console.log("wrong request");
+    }
+}
+
+let request="even";
+let func = oddEvenTest(request);
+
+console.log(func(6));
+
+// METHODS 
+
+const calculator = {
+     num : 55,
+    add: function(a,b){
+        return a+b;
+    },
+    sub: function(a,b){
+        return a-b;
+    },
+    mul: function(a,b){
+        return a*b;
+    }
+};
+
+
+console.log(calculator.add(45,45));
+console.log(calculator.sub(45,45));
+console.log(calculator.mul(45,45));
+
+// method shorthand 
+
+const Calculator = {
+   Add(a,b){
+    return a + b;
+   },
+   sub(a,b){
+    return a - b;
+   }
+};
+
+console.log(Calculator.Add(26,25));
+
+
