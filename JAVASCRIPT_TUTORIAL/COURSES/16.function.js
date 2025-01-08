@@ -224,3 +224,27 @@ let sumOfnum = function(a , b){
 
 console.log(sumOfnum(3,5)); //8
 
+// HIGHER ORDER FUNCTION 
+
+
+console.log("higher order function------");
+
+// let Greet = function(){
+//    console.log("hello");
+// }
+
+// Greet();
+// Greet();----> better way 
+
+function multipleGreet(func,count){
+    for(let i = 1; i <= count ;i++ ){
+        func();
+    }
+}
+
+let Greet = function() {
+    console.log("hello");
+}
+
+multipleGreet(Greet,10);
+
