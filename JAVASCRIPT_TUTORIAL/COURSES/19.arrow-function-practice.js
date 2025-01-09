@@ -34,3 +34,38 @@ console.log(arrayAverage(arr));
 
 // 4 write an arrow function named isEven() that takes a single number as argument and returns if it is even or not.
 
+
+let num = 4;
+
+const isEven = (num) =>(
+  num%2 == 0
+);
+
+console.log(isEven(num));
+
+//5 
+
+const object = {
+   message:'Hello,World!',
+   logMessage(){
+    console.log(this.message);
+   }
+}
+
+setTimeout(object.logMessage,1000);
+
+//6 
+
+let length = 4;
+function callback() {
+  console.log(this.length);
+}
+
+const Object = {
+  length:5,
+  method(callback){
+    callback();
+  },
+};
+
+Object.method(callback,1,2);
