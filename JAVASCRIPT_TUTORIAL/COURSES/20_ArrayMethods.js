@@ -146,3 +146,93 @@ let minVal = number.reduce((min,el) => {
 });
 
 console.log(minVal);
+
+// Default parameter 
+
+console.log("default parameter-------");
+function sum(a,b=4){
+    return a + b;
+}
+
+console.log(sum(2)); // 6
+console.log(sum(2,5));  //7 
+
+//spread --------
+
+console.log(..."akshitaparmar");
+
+let arrNum = [1,4,2,3,5,0,6,7,3,9,];
+
+console.log(...arrNum);
+console.log(Math.min(...arrNum)); //0
+
+console.log(Math.max(...arrNum));//9
+
+// spread with array literals ------
+
+let numTable = [2,4,6,8];
+
+let newArr = [...numTable];
+console.log(newArr);
+
+
+let chars = [..."hello"];
+console.log(chars);
+
+// spread with object litearals 
+
+const data = {
+    email: " akshitaparmar23@gmail.com ",
+    password:"abcd",
+};
+
+let dataCopy = {...data, id:123};
+console.log(dataCopy);
+
+//object
+let arr3 = [1,2,3,4,5];
+let obj1 = {...arr3};
+
+console.log(obj1);
+
+//REST---------
+
+function sum(...args){
+    for(let i = 0;i<args.length; i++){
+        console.log("you gave us",args[i] );
+    }
+}
+
+console.log(sum(1,2,3,4,5));
+
+function min(a,b,c,d){
+    console.log(arguments);
+    console.log(arguments.length);
+}
+
+min(2,4,6,8);
+
+// 
+
+function sum(...args){
+    return args.reduce((sum,el) => sum * el);
+}
+
+console.log(sum(4,5));
+
+// min 
+
+function min(msg, ...args){
+    console.log(msg);
+    return args.reduce((min,el) => {
+        if(min > el){
+            return el;
+        }else {
+            return min;
+        }
+    });
+}
+
+console.log(min(11,4,3,12));//3
+console.log(min("hello",42,14,5,13,14,6));
+ 
