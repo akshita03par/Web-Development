@@ -236,3 +236,29 @@ function min(msg, ...args){
 console.log(min(11,4,3,12));//3
 console.log(min("hello",42,14,5,13,14,6));
  
+//destructing -----
+
+let names = ["tony","bruce","steve","peter"];
+let [winner, runnerup,...others] = names ; // destructing
+
+console.log(winner , runnerup);
+console.log(others);
+
+// destructing with objects -----
+
+const student ={
+    name:"karan",
+    age:14,
+    class:9,
+    subjects:["hindi","english","math","science"],
+    username:"karan123",
+    password:"abcd"
+
+};
+
+const{username:user,password:pass,subjects:sub,city ="Indore"} = student;
+console.log(user);
+console.log(pass);
+console.log(sub);
+console.log(city); //indore 
+
