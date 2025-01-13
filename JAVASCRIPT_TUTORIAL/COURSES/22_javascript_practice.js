@@ -267,3 +267,62 @@ let items = filtered.map(function(num){
 });   
 
 console.log(items);
+
+// function -------------
+
+// function declaration 
+
+function run() {
+    console.log("running");
+}
+
+run();
+
+// named function assignment 
+
+let stand = function walk(){
+    console.log("walking");
+};
+
+stand();
+
+// Anonymous function assignment 
+
+let stand2 = function(){
+    console.log("walking");
+};
+
+stand2();
+
+// pass multiple parameter
+
+function sum(a,b){
+    console.log(arguments); // reamining value store in arguments 
+    return a+b;
+}
+
+console.log(sum(1,2,3,4,5,6,7));
+
+// multiple parameter sum 
+
+function Sum(){
+    let total = 0;
+    for(let value of arguments)
+        total = total + value;
+    return total;
+}
+
+console.log(Sum(1,2,3,4,5,6,7));
+
+// rest operator 
+
+function sum2(num,value,...args){
+    console.log(args);
+    console.log(num);// 1
+    console.log(num); //2
+}
+sum2(1,2,3,4,5,6); // array 
+
+
+
+
