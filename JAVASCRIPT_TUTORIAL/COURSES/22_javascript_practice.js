@@ -162,3 +162,32 @@ src3.a++;
 console.log(src3);
 console.log(dest3);
 
+// STRING 
+
+let firstName = "Akshita Parmar";
+console.log(firstName);
+
+console.log(firstName.length); //14
+
+console.log(firstName.includes("pa")); //false
+console.log(firstName.startsWith("Akshita")); //true
+console.log(firstName.endsWith("ar"));   //true
+
+let message = "this is my first message";
+let words = message.split(" ");
+console.log(words);
+
+// Date and Time 
+
+let date = new Date();
+console.log(date);
+
+let date2 = new Date("June 26 2003 02:30");
+console.log(date2);
+
+let date3 = new Date(2003,5,26,2,30,50);
+console.log(date3);
+
+date3.setFullYear(2002);
+console.log(date3);
+
