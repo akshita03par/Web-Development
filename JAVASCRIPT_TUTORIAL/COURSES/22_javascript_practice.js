@@ -191,3 +191,79 @@ console.log(date3);
 date3.setFullYear(2002);
 console.log(date3);
 
+//Array ------->
+
+// find elements in object 
+
+let courses = [
+    {no:1, name:"Akshita"},
+    {no:2, name:"Rahul"}
+];
+
+console.log(courses);
+
+let course = courses.find(function(course){
+    return course.name === "Akshita";
+});
+
+console.log(course);
+
+// arrow function -------------->
+
+let Course = courses.find(Course =>  Course.name === "Rahul");
+console.log(Course);
+
+// Empty an array --------------->
+
+let numbers = [1,2,3,4,5];
+let numbers2 = numbers;
+
+// numbers = []; //1
+numbers.length = 0; //2
+numbers.splice(0,numbers.length); //3
+console.log(numbers);
+console.log(numbers2);
+
+// concat (combining)--------->
+
+let first = [1,2,3];
+let second = [4,5,6];
+
+let combined = first.concat(second);
+console.log(combined);
+
+let combine = [...first,"a",...second,"b"];
+console.log(combine);
+
+// for-each------->
+
+let arr = [10,20,30,40,50];
+
+arr.forEach(function(number){
+    console.log(number);
+});
+
+
+// arrow function 
+console.log("arrow function------");
+
+arr.forEach(number => console.log(number));
+
+// joining an array 
+
+let Numbers = [10,20,30,40,50];
+const joined = Numbers.join(',');
+
+console.log(joined);
+
+// array to object mapping 
+
+let numbers3 = [1,2,8,-5,-8];
+let filtered = numbers3.filter(value => value >=0);
+console.log(filtered);
+
+let items = filtered.map(function(num){
+    return {value:num} ;
+});   
+
+console.log(items);
