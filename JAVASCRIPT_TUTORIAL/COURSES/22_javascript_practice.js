@@ -61,13 +61,104 @@ console.log(RectangleObject);
 
 // constructor property 
 
-// let rectangle1 = new Function(
-//     'length',
-//   `  this.length = len;
-//     this.breadth = bre;
-//     this.draw = function(){
-//         console.log("drawing rectangle");
-//     }`
-// );
+let rectangle1 = new Function(
+    'length','breadth',
+  `  this.length = length;
+    this.breadth = breadth;
+    this.draw = function(){
+        console.log("drawing rectangle");
+    }`
+);
 
+//object creation using rectangle1
+
+let rect = new rectangle1(2,3);
+console.log(rect);
+
+// for-in loop 
+
+let rectangle2 = {
+   length :2 ,
+   breadth :4
+};
+
+for (let key in rectangle2){
+    console.log(key,rectangle2[key]);
+}
+
+// for-of loop 
+
+for (let key of Object.keys(rectangle2)){
+    console.log(key); // length , breadth
+}
+
+for (let key of Object.entries(rectangle2)){
+    console.log(key); 
+}
+
+// how check property exit are not ?
+
+if('color' in rectangle2){
+    console.log('Present');
+}else{
+    console.log('Absent');// Absent
+}
+
+// OBJECT CLONING ---------------------------->
+
+//1 ITERATION 
+
+console.log("iteration-----");
+
+let src = {
+    a:10,
+    b:20,
+    c:30
+};
+
+let dest = {};
+for(let key in src){
+    dest[key] = src[key];
+}
+
+console.log(dest);
+src.a++;
+console.log(src);
+console.log(dest);
+
+//2 Assign 
+
+console.log("assign-----");
+
+let src2 = {
+    a:20,
+    b:30,
+    c:40
+};
+
+let src1 = {value:25};
+
+let dest2 = Object.assign({},src2,src1);
+console.log(dest2);
+
+src2.a++;
+console.log(src2);
+console.log(dest2);
+
+//3 spread 
+
+console.log("spread------");
+
+let src3 = {
+    a:30,
+    b:40,
+    c:50
+};
+
+let dest3 = {...src3};
+console.log(dest3);
+
+src3.a++;
+console.log(src3);
+console.log(dest3);
 
