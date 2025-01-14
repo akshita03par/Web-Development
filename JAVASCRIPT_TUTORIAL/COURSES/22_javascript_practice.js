@@ -324,5 +324,26 @@ function sum2(num,value,...args){
 sum2(1,2,3,4,5,6); // array 
 
 
+// getter and setter ------->
+
+let person = {
+    fName : "Akshita",
+    lName : "Parmar",
+    get fullName() {
+        return `${person.fName} ${person.lName}`;
+    },
+    set fullName(value) {
+        let parts = value.split(' ');
+        this.fName = parts[0];
+        this.lName = parts[1];
+    }
+};
+
+console.log(person.fullName);// Akshita Parmar
+
+person.fullName = "Rahul Kumar";
+console.log(person.fullName);
+
+
 
 
