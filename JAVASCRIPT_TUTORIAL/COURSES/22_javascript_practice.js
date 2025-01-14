@@ -333,13 +333,23 @@ let person = {
         return `${person.fName} ${person.lName}`;
     },
     set fullName(value) {
+        if(typeof value !== "string"){
+            throw new Error("you have not sent a string");
+        }
         let parts = value.split(' ');
         this.fName = parts[0];
         this.lName = parts[1];
     }
 };
 
-console.log(person.fullName);// Akshita Parmar
+try{
+    person.fullName = "Akshita Parmar";
+    console.log(person.fullName);
+}catch(e){
+    alert(e);
+}
+
+// console.log(person.fullName);// Akshita Parmar
 
 person.fullName = "Rahul Kumar";
 console.log(person.fullName);
