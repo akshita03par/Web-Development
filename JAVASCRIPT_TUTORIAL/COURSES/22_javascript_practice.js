@@ -354,6 +354,3 @@ try{
 person.fullName = "Rahul Kumar";
 console.log(person.fullName);
 
-
-
-
