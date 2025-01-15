@@ -63,6 +63,55 @@ console.dir(img.getAttribute("id")); // get id
 
 // console.dir(img.setAttribute("id","spidermanImg")); //change id name 
 
+// manipulating style
+
+// 1 style property 
+
+let Img = document.querySelector("img");
+ console.dir(Img.style);
+
+
+// console.dir(heading.style.color = "purple"); // change color 
+
+
+// let links = document.querySelectorAll(".box a");
+
+// for(let i = 0; i < links.length; i++){
+//     links[i].style.color = "purple";
+// }
+
+// for(link of links){
+//     link.style.color = "green";
+// }
+
+// 2 classlist  
+
+// let Img = document.querySelector("img");
+console.dir(Img.classList); //2
+
+console.dir(heading.classList); //0
+
+// add 
+ let Heading = document.querySelector("h1");
+ console.dir(Heading);
+
+ Heading.classList.add("spider-man");
+ console.log(Heading.classList); //1 
+
+// remove 
+
+// console.dir(Heading.remove("spider-man"));
+// console.log(Heading.classList);
+
+// 3 contains 
+
+console.dir(Heading.classList.contains("spider-man"));
+console.dir(Heading.classList); //1 
+
+// 4 toggle 
+
+console.dir(Heading.classList.toggle("spider-man"));
+console.dir(Heading.classList); // change style to original  means it remove and return false 
 
 
 
