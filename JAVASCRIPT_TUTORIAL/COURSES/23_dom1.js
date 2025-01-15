@@ -92,11 +92,11 @@ console.dir(Img.classList); //2
 console.dir(heading.classList); //0
 
 // add 
- let Heading = document.querySelector("h1");
- console.dir(Heading);
+let Heading = document.querySelector("h1");
+console.dir(Heading);
 
- Heading.classList.add("spider-man");
- console.log(Heading.classList); //1 
+Heading.classList.add("spider-man");
+console.log(Heading.classList); //1 
 
 // remove 
 
@@ -112,6 +112,56 @@ console.dir(Heading.classList); //1
 
 console.dir(Heading.classList.toggle("spider-man"));
 console.dir(Heading.classList); // change style to original  means it remove and return false 
+
+// Navigation 
+
+//parentElement
+
+let h3 = document.querySelector("h3");
+console.log(h3.parentElement);
+
+//children 
+
+let box = document.querySelector(".box");
+console.dir(box.children); //h3 ,ul
+
+//childElementCount 
+
+console.dir(box.childElementCount); //2
+
+// previousElementSibling 
+
+console.dir(box.previousElementSibling); //p
+
+//nextElementSibling 
+
+console.dir(box.nextElementSibling); //div 
+
+
+//Adding Elements--------------->
+
+//appendChild(element)
+
+
+
+
+//append(element)
+
+
+
+
+
+//prepend(element)
+
+
+
+
+
+//insertAdjacent(where, element )
+
+
+
+
 
 
 
