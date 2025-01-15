@@ -39,7 +39,7 @@ console.dir(document.querySelectorAll("div a"));
 
 //using properties & Method ------------>
 
-//innerText-------->
+//innerText, textContent , innerHTML -------->
 
 let para = document.querySelector("p");
 console.dir(para);
@@ -47,6 +47,23 @@ console.dir(para);
 console.dir(para.innerText);
 console.dir(para.textContent);
 console.dir(para.innerHTML);
+
+let heading = document.querySelector("h1");
+console.dir(heading); //h1
+
+// heading.innerHTML= `<u> ${heading.innerHTML}</u>`;
+// console.dir(heading.innerHTML);
+
+// Manipulating Attributes ------>
+
+let img = document.querySelector("img");
+console.dir(img);
+
+console.dir(img.getAttribute("id")); // get id 
+
+// console.dir(img.setAttribute("id","spidermanImg")); //change id name 
+
+
 
 
 
