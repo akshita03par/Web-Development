@@ -140,10 +140,32 @@ console.dir(box.nextElementSibling); //div
 
 //Adding Elements--------------->
 
+//createElement 
+
+let newP = document.createElement("p");
+
+console.dir(newP);
+
+newP.innerText = "Hi, I am a new para";
+console.dir(newP);
+
 //appendChild(element)
 
+let body = document.querySelector("body");
+console.dir(body.appendChild(newP)); // add in last html page
 
 
+console.dir(box.appendChild(newP)); //  add in last of publication info box
+
+
+// create button
+let btn = document.createElement("button");
+console.dir(btn);
+
+btn.innerText = " click me!";
+console.dir(btn);
+
+console.dir(box.appendChild(btn));
 
 //append(element)
 
