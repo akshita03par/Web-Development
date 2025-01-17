@@ -163,28 +163,19 @@ let btn = document.createElement("button");
 console.dir(btn);
 
 btn.innerText = " click me!";
-console.dir(btn);
-
 console.dir(box.appendChild(btn));
 
-//append(element)
+//append(element) -->add last
 
+console.dir(newP.append(" .This is new text- "));
+console.dir(newP.append(btn));
+console.dir(newP.append(" do not click this button"));
 
+//prepend(element) -->add first
 
-
-
-//prepend(element)
-
-
-
-
+console.dir(box.prepend(newP));
 
 //insertAdjacent(where, element )
-
-
-
-
-
 
 
 
