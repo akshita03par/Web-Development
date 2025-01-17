@@ -140,42 +140,56 @@ console.dir(box.nextElementSibling); //div
 
 //Adding Elements--------------->
 
-//createElement 
+// //createElement 
 
-let newP = document.createElement("p");
+// let newP = document.createElement("p");
 
-console.dir(newP);
+// console.dir(newP);
 
-newP.innerText = "Hi, I am a new para";
-console.dir(newP);
+// newP.innerText = "Hi, I am a new para";
+// console.dir(newP);
 
-//appendChild(element)
+// //appendChild(element)-----------
 
-let body = document.querySelector("body");
-console.dir(body.appendChild(newP)); // add in last html page
-
-
-console.dir(box.appendChild(newP)); //  add in last of publication info box
+// let body = document.querySelector("body");
+// console.dir(body.appendChild(newP)); // add in last html page
 
 
-// create button
-let btn = document.createElement("button");
-console.dir(btn);
+// console.dir(box.appendChild(newP)); //  add in last of publication info box
 
-btn.innerText = " click me!";
-console.dir(box.appendChild(btn));
 
-//append(element) -->add last
+// // create button
+// let btn = document.createElement("button");
+// console.dir(btn);
 
-console.dir(newP.append(" .This is new text- "));
-console.dir(newP.append(btn));
-console.dir(newP.append(" do not click this button"));
+// btn.innerText = " click me!";
+// console.dir(box.appendChild(btn));
+
+// //append(element) -->add last--------------
+
+// console.dir(newP.append(" .This is new text- "));
+// console.dir(newP.append(btn));
+// console.dir(newP.append(" do not click this button"));
 
 //prepend(element) -->add first
 
-console.dir(box.prepend(newP));
+// console.dir(box.prepend(newP));
 
 //insertAdjacent(where, element )
+
+let btn = document.createElement("button");
+
+btn.innerHTML = "NEW BUTTON!!!";
+console.dir(btn.innerHTML);
+
+let p = document.querySelector("p");
+console.dir(p);
+
+p.insertAdjacentElement("beforebegin",btn); // before para 
+p.insertAdjacentElement("afterbegin",btn); // before para in same line 
+
+p.insertAdjacentElement("beforeend",btn); 
+p.insertAdjacentElement("afterend",btn);
 
 
 
