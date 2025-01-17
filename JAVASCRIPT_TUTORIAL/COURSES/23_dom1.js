@@ -142,36 +142,36 @@ console.dir(box.nextElementSibling); //div
 
 // //createElement 
 
-// let newP = document.createElement("p");
+let newP = document.createElement("p");
 
-// console.dir(newP);
+console.dir(newP);
 
-// newP.innerText = "Hi, I am a new para";
-// console.dir(newP);
+newP.innerText = "Hi, I am a new para";
+console.dir(newP);
 
-// //appendChild(element)-----------
+//appendChild(element)-----------
 
-// let body = document.querySelector("body");
-// console.dir(body.appendChild(newP)); // add in last html page
-
-
-// console.dir(box.appendChild(newP)); //  add in last of publication info box
+let body = document.querySelector("body");
+console.dir(body.appendChild(newP)); // add in last html page
 
 
-// // create button
+console.dir(box.appendChild(newP)); //  add in last of publication info box
+
+
+// create button
 // let btn = document.createElement("button");
 // console.dir(btn);
 
 // btn.innerText = " click me!";
 // console.dir(box.appendChild(btn));
 
-// //append(element) -->add last--------------
+//append(element) -->add last--------------
 
 // console.dir(newP.append(" .This is new text- "));
 // console.dir(newP.append(btn));
 // console.dir(newP.append(" do not click this button"));
 
-//prepend(element) -->add first
+// //prepend(element) -->add first
 
 // console.dir(box.prepend(newP));
 
@@ -186,10 +186,20 @@ let p = document.querySelector("p");
 console.dir(p);
 
 p.insertAdjacentElement("beforebegin",btn); // before para 
-p.insertAdjacentElement("afterbegin",btn); // before para in same line 
+// p.insertAdjacentElement("afterbegin",btn); // before para in same line 
 
-p.insertAdjacentElement("beforeend",btn); 
-p.insertAdjacentElement("afterend",btn);
+// p.insertAdjacentElement("beforeend",btn); 
+// p.insertAdjacentElement("afterend",btn);
 
 
+// Removing Elements -------->
 
+//1 removeChild(element)
+let div = document.querySelector(".container");
+console.log(div);
+
+// div.removeChild(btn);
+
+//2 remove 
+
+btn.remove();
