@@ -62,8 +62,19 @@ button.setAttribute("id","btn");
 let btn = document.querySelector("#btn");
 button.classList.add("btnstyle");
 
-//
+//Qs4. Create an h1 element on the page and set its text to “DOM Practice” underlined.Change its color to purple.
+
+let H1 = document.createElement("h1");
+H1.innerText = "DOM practice";
+
+document.querySelector("body").append(H1);
+H1.classList.add("h1Style");
 
 
+//Qs5. Create a p tag on the page and set its text to “Apna College Delta Practice”, where Delta is bold.
 
+let para = document.createElement("para");
+para.innerHTML = "Apna College <b>Delta</b> Practice";
+
+document.querySelector("body").append(para);
 
