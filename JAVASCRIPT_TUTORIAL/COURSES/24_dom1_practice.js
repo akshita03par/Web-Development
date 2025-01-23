@@ -78,3 +78,39 @@ para.innerHTML = "Apna College <b>Delta</b> Practice";
 
 document.querySelector("body").append(para);
 
+
+// event practice ------->
+
+//Create a button on the page using JavaScript. Add an event listener to the button that changes the button’s color to green when it is clicked
+
+let btn2 = document.querySelector("button");
+
+btn2.addEventListener("click",function(){
+    this.style.backgroundColor = "purple";
+    this.style.color = "white";
+});
+
+
+// 
+
+let Inp = document.querySelector("#text");
+let h2 = document.querySelector("#h2");
+
+Inp.addEventListener("input", function () {
+    let inputValue = Inp.value;
+    console.log(inputValue);
+
+      if (/^[a-zA-Z]*$/.test(inputValue)) {
+        h2.innerText = inputValue;
+    } else {
+        console.log("Please enter only alphabetic characters");
+    }
+});
+
+
+
+
+
+
+
+
