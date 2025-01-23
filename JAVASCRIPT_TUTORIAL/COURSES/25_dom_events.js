@@ -82,3 +82,46 @@ P.addEventListener("click",changeColor);
 H1.addEventListener("click",changeColor);
 H3.addEventListener("click",changeColor);
 
+
+// keyboard events ----->
+
+
+let btnn = document.querySelector("button");
+console.dir(btnn);
+
+btnn.onclick = function (event) {
+    console.log(event);
+    console.log("button was clicked");
+};
+
+let input = document.querySelector("input");
+
+// input.addEventListener("keydown",function(event){
+//     console.log("event :",event);
+//     console.log("key :",event.key);
+//     console.log("code :",event.code);
+//     console.log("key was pressed");
+// });
+
+
+// input.addEventListener("keyup",function(event){
+//     console.log("key was release");
+// });
+
+
+input.addEventListener("keydown",function(event){
+    console.log("code = ", event.code); // Arrow up - down - right - left
+
+    if(event.code == "ArrowUp"){
+        console.log("character moves forward");
+    }else if (event.code == "ArrowDown"){
+        console.log("character moves backward");
+    } else if (event.code == "ArrowLeft"){
+        console.log("character moves left"); 
+    }else if (event.code == "ArrowRight"){
+        console.log("character moves right"); 
+    } 
+});
+
+
+
