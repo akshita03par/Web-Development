@@ -155,8 +155,22 @@ form.addEventListener("submit",function(event){
 
 });
 
+// change event ----->
+
+let username = document.querySelector("#username");
+
+username.addEventListener("change",function(){
+    console.log("change event");
+    console.log("final value = ",this.value)
+});
 
 
+//input event ------->
+
+username.addEventListener("change",function(){
+    console.log("input event");
+    console.log("final value = ",this.value)
+});
 
 
 
