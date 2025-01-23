@@ -11,19 +11,19 @@ btn.onclick = function () {
 
 // for all button--->
 
-let btns = document.querySelectorAll("button");
+// let btns = document.querySelectorAll("button");
 
-for(btn of btns){
-    btn.onclick = sayHello;
-    btn.onmouseenter = function () {
-        console.log("you entered a button");
+// for(btn of btns){
+//     btn.onclick = sayHello;
+//     btn.onmouseenter = function () {
+//         console.log("you entered a button");
 
-    };
-}
+//     };
+// }
 
-function sayHello() {
-    alert("Hello!");
-}
+// function sayHello() {
+//     alert("Hello!");
+// }
 
 // Event Listener ------->
 
@@ -128,8 +128,35 @@ input.addEventListener("keydown",function(event){
 
 let form = document.querySelector("form");
 
+// form.addEventListener("submit",function(event){
+//     event.preventDefault();
+//     alert("form submitted");
+// });
+
+// Extracting form Data ------>
+
 form.addEventListener("submit",function(event){
     event.preventDefault();
-    alert("form submitted");
+    
+    // let username = document.querySelector("#username");
+    // let password = document.querySelector("#password");
+
+    // console.log(username.value);
+    // console.log(password.value);
+
+    // console.log(form.elements);
+    // console.log(form.elements[0]);
+
+    let username = this.elements[0];
+    let password = this.elements[1];
+
+    console.log(username.value);
+    console.log(password.value);
+
 });
+
+
+
+
+
 
