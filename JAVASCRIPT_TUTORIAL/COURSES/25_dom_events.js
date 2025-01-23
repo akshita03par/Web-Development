@@ -2,12 +2,12 @@
 
 // onclick 
 
-let btn = document.querySelector("button");
-console.dir(btn);
+// let btn = document.querySelector("button");
+// console.dir(btn);
 
-btn.onclick = function () {
-    console.log("button was clicked");
-};
+// btn.onclick = function () {
+//     console.log("button was clicked");
+// };
 
 // for all button--->
 
@@ -41,60 +41,60 @@ btn.onclick = function () {
 //     });
 // }
 
-function sayName() {
-    console.log("Akshita parmar");
-}
+// function sayName() {
+//     console.log("Akshita parmar");
+// }
 
-let p = document.querySelector("p");
+// let p = document.querySelector("p");
 
-p.addEventListener("click",function () {
-   console.log("parah was clicked");
-});
+// p.addEventListener("click",function () {
+//    console.log("parah was clicked");
+// });
 
-let box = document.querySelector(".box");
+// let box = document.querySelector(".box");
 
-box.addEventListener("mouseenter",function(){
-     console.log("mouse inside box");
-});
+// box.addEventListener("mouseenter",function(){
+//      console.log("mouse inside box");
+// });
 
 
 // this in event listeners ---------
 
 
-let btn2 = document.querySelector("button");
+// let btn2 = document.querySelector("button");
 
-// btn2.addEventListener("click",function(){
-//     console.log(this);
-//     this.style.backgroundColor = "blue";
-// });
+// // btn2.addEventListener("click",function(){
+// //     console.log(this);
+// //     this.style.backgroundColor = "blue";
+// // });
 
-let P = document.querySelector("p");
-let H1 = document.querySelector("h1");
-let H3 = document.querySelector("h3");
+// let P = document.querySelector("p");
+// let H1 = document.querySelector("h1");
+// let H3 = document.querySelector("h3");
 
-function changeColor() {
-    console.log(this.innerText);
-    this.style.color = "red";
-}
+// function changeColor() {
+//     console.log(this.innerText);
+//     this.style.color = "red";
+// }
 
-btn2.addEventListener("click",changeColor);
-P.addEventListener("click",changeColor);
-H1.addEventListener("click",changeColor);
-H3.addEventListener("click",changeColor);
+// btn2.addEventListener("click",changeColor);
+// P.addEventListener("click",changeColor);
+// H1.addEventListener("click",changeColor);
+// H3.addEventListener("click",changeColor);
 
 
 // keyboard events ----->
 
 
-let btnn = document.querySelector("button");
-console.dir(btnn);
+// let btnn = document.querySelector("button");
+// console.dir(btnn);
 
-btnn.onclick = function (event) {
-    console.log(event);
-    console.log("button was clicked");
-};
+// btnn.onclick = function (event) {
+//     console.log(event);
+//     console.log("button was clicked");
+// };
 
-let input = document.querySelector("input");
+// let input = document.querySelector("input");
 
 // input.addEventListener("keydown",function(event){
 //     console.log("event :",event);
@@ -109,24 +109,24 @@ let input = document.querySelector("input");
 // });
 
 
-input.addEventListener("keydown",function(event){
-    console.log("code = ", event.code); // Arrow up - down - right - left
+// input.addEventListener("keydown",function(event){
+//     console.log("code = ", event.code); // Arrow up - down - right - left
 
-    if(event.code == "ArrowUp"){
-        console.log("character moves forward");
-    }else if (event.code == "ArrowDown"){
-        console.log("character moves backward");
-    } else if (event.code == "ArrowLeft"){
-        console.log("character moves left"); 
-    }else if (event.code == "ArrowRight"){
-        console.log("character moves right"); 
-    } 
-});
+//     if(event.code == "ArrowUp"){
+//         console.log("character moves forward");
+//     }else if (event.code == "ArrowDown"){
+//         console.log("character moves backward");
+//     } else if (event.code == "ArrowLeft"){
+//         console.log("character moves left"); 
+//     }else if (event.code == "ArrowRight"){
+//         console.log("character moves right"); 
+//     } 
+// });
 
 
 // form event ----->
 
-let form = document.querySelector("form");
+// let form = document.querySelector("form");
 
 // form.addEventListener("submit",function(event){
 //     event.preventDefault();
@@ -135,42 +135,52 @@ let form = document.querySelector("form");
 
 // Extracting form Data ------>
 
-form.addEventListener("submit",function(event){
-    event.preventDefault();
+// form.addEventListener("submit",function(event){
+//     event.preventDefault();
     
-    // let username = document.querySelector("#username");
-    // let password = document.querySelector("#password");
+//     // let username = document.querySelector("#username");
+//     // let password = document.querySelector("#password");
 
-    // console.log(username.value);
-    // console.log(password.value);
+//     // console.log(username.value);
+//     // console.log(password.value);
 
-    // console.log(form.elements);
-    // console.log(form.elements[0]);
+//     // console.log(form.elements);
+//     // console.log(form.elements[0]);
 
-    let username = this.elements[0];
-    let password = this.elements[1];
+//     let username = this.elements[0];
+//     let password = this.elements[1];
 
-    console.log(username.value);
-    console.log(password.value);
+//     console.log(username.value);
+//     console.log(password.value);
 
-});
+// });
 
 // change event ----->
 
-let username = document.querySelector("#username");
+// let username = document.querySelector("#username");
 
-username.addEventListener("change",function(){
-    console.log("change event");
-    console.log("final value = ",this.value)
-});
+// username.addEventListener("change",function(){
+//     console.log("change event");
+//     console.log("final value = ",this.value)
+// });
 
 
-//input event ------->
+// //input event ------->
 
-username.addEventListener("change",function(){
-    console.log("input event");
-    console.log("final value = ",this.value)
-});
+// username.addEventListener("change",function(){
+//     console.log("input event");
+//     console.log("final value = ",this.value)
+// });
+
+
+let inp = document.querySelector("#text");
+let p = document.querySelector("p")
+
+
+inp.addEventListener("input",function(){
+    console.log(inp.value);
+    p.innerText = inp.value;
+})
 
 
 
