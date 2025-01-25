@@ -84,8 +84,7 @@ async function GetFacts(){
 
 GetFacts();
 
-
-// dog picture api 
+// dog picture api
 
 let url2 = "https://dog.ceo/api/breeds/image/random";
 let btn2 = document.querySelector("#dogimg");
@@ -96,7 +95,6 @@ btn2.addEventListener("click",async()=>{
   img.setAttribute("src",link);
   console.log(link);
 });
-
 
 async function getImage(){
   try{
@@ -110,8 +108,7 @@ async function getImage(){
 
 getImage();
 
-
-// sending headers 
+// sending headers
 
 const url3 = "https://icanhazdadjoke.com/";
 
@@ -128,4 +125,37 @@ async function getJokes(){
 
 getJokes();
 
+// Axios --> updating query Strings
 
+let url4 = "http://universities.hipolabs.com/search?name=";
+let btn3 = document.querySelector("#un");
+
+btn3.addEventListener("click", async () => {
+  let country = document.querySelector("input").value;
+  console.log(country);
+
+  let collarr = await getColleges(country);
+  show(collarr);
+});
+
+function show(collarr){
+  let list = document.querySelector("#list");
+  list.innerText = "";
+  for(col of collarr){
+    console.log(col.name);
+    let li = document.createElement("li");
+    li.innerText = col.name;
+    list.appendChild(li);
+  }
+}
+
+
+async function getColleges(country) {
+  try {
+    let res = await axios.get(url4 + country);
+    return res.data;
+  } catch (e) {
+    console.log("error : ", e);
+    return [];
+  }
+}
