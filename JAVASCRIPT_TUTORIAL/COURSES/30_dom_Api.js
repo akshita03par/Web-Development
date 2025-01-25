@@ -59,3 +59,27 @@ async function getFacts() {
 
 getFacts();
 
+// axios ------------>
+
+let btn = document.querySelector("button");
+
+btn.addEventListener("click",async()=>{
+  let fact = await GetFacts();
+  console.log(fact);
+  let p = document.querySelector("#result");
+  p.innerText = fact;
+});
+
+let Url = "https://catfact.ninja/fact";
+
+async function GetFacts(){
+  try{
+    let res = await axios.get(Url);
+    return res.data.fact;
+  }catch(e){
+    console.log("error - ",e);
+    return "No fact found";
+  }
+}
+
+
