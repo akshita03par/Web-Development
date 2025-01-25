@@ -69,36 +69,34 @@ console.log("---------------------------------");
 
 // promises apply ----->
 
-
 function changeColor(color, delay) {
-   return new Promise((resolve,reject)=>{
-        setTimeout(() => {
-            h1.style.color = color;
-            resolve("color changed!");
-          }, delay);
-    });  
-  }
-  
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      h1.style.color = color;
+      resolve("color changed!");
+    }, delay);
+  });
+}
+
 //  let requestPromise = changeColor("red",1000);
 //  console.log(requestPromise);
 
-changeColor("red",1000)
-.then(()=>{
+changeColor("red", 1000)
+  .then(() => {
     console.log("red color was completed");
-    return changeColor("orange",1000);
-})
-.then(()=>{
+    return changeColor("orange", 1000);
+  })
+  .then(() => {
     console.log("orange color was completed");
-    return changeColor("green",2000);
-})
-.then(()=>{
+    return changeColor("green", 2000);
+  })
+  .then(() => {
     console.log("green color was completed");
-    return changeColor("blue",3000);
-})
-.then(()=>{
+    return changeColor("blue", 3000);
+  })
+  .then(() => {
     console.log("blue color was completed");
-})
-
+  });
 
 // setTimeout(()=>{
 //     h1.style.color = "purple";
@@ -107,7 +105,6 @@ changeColor("red",1000)
 // setTimeout(()=>{
 //     h1.style.color = "Orange";
 // },2000);
-
 
 // Promises-------------------------------------------------------------->
 
@@ -208,44 +205,92 @@ savetoDb("Akshita Parmar")
 savetoDb("Akshita Parmar")
   .then((result) => {
     console.log("data1 saved");
-    console.log("result of promise:",result);
+    console.log("result of promise:", result);
     return savetoDb("hello world");
   })
   .then((result) => {
     console.log("data2 saved");
-    console.log("result of promise:",result);
+    console.log("result of promise:", result);
     return savetoDb("Akshita");
   })
   .then((result) => {
     console.log("data3 saved");
-    console.log("result of promise:",result);
+    console.log("result of promise:", result);
   })
   .catch((error) => {
     console.log("promise was rejected");
-    console.log("error of promise:",error);
+    console.log("error of promise:", error);
   });
-
 
 // Async function ------->
 
- async function greet() {
+async function greet() {
   //throw "some random error";
   return "hello";
 }
 
 greet()
-.then((result)=>{
-  console.log("promise was resolved");
-  console.log("result was : ", result);
-})
-.catch((error)=>{
-  console.log("promise was rejected with error:",error);
-});
+  .then((result) => {
+    console.log("promise was resolved");
+    console.log("result was : ", result);
+  })
+  .catch((error) => {
+    console.log("promise was rejected with error:", error);
+  });
 
- let demo =  async ()=>{
-  return 5;
+//  let demo =  async ()=>{
+//   return 5;
+// }
+
+// demo();
+
+// Await keyword -------->
+
+function getNum() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      let num = Math.floor(Math.random() * 10) + 1;
+      console.log("num :",num);
+      resolve();
+    }, 1000);
+  });
 }
 
-demo();
+async function Demo() {
+  await getNum();
+  await getNum();
+  await getNum();
+ 
+}
+
+ Demo();
+
+
+ // change color with async function ---->
+
+ h2 = document.querySelector("h2");
+
+ function ChangeColor(color,delay){
+  return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      
+
+      h2.style.color = color;
+      console.log(`color changed to : ${color}!`);
+      resolve("color chnaged!");
+    },delay);
+  });
+ }
+
+ async function Demochange(){
+   await ChangeColor("brown",1000);
+   await ChangeColor("pink",1000);
+   await ChangeColor("violet",1000);
+   await ChangeColor("purple",1000);
+
+
+ }
+
+ Demochange();
 
 
