@@ -56,6 +56,15 @@ const t2 = performance.now();
 console.log("this took : " + (t2 - t1) + " ms");//1 reflow //1repaint
 
 
+// promise ---->
 
+let meraPromise = new Promise(function(resolve, reject){
+  setTimeout(function(){
+    console.log("I am inside Promise")
+  },2000);
+  resolve();
+});
+
+console.log("Pehla");
 
 
