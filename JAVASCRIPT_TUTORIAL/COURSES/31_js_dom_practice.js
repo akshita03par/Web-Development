@@ -67,6 +67,8 @@ let meraPromise = new Promise(function(resolve, reject){
 
 console.log("Pehla");
 
+// classes and export modules in js 
+
 
 // closure------------->
 
@@ -75,8 +77,9 @@ function init(){
   function displayName(){
     console.log(name);
   }
-  displayName();
+   return displayName;
 }
 
-init();
+let a = init(); // refrences not copy
+a();
 
