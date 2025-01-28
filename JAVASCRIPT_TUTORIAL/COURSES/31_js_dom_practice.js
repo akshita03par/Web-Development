@@ -68,3 +68,15 @@ let meraPromise = new Promise(function(resolve, reject){
 console.log("Pehla");
 
 
+// closure------------->
+
+function init(){
+  let name = "Mozilla";
+  function displayName(){
+    console.log(name);
+  }
+  displayName();
+}
+
+init();
+
