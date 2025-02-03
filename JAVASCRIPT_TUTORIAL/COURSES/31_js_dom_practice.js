@@ -56,12 +56,13 @@ const t2 = performance.now();
 console.log("this took : " + (t2 - t1) + " ms");//1 reflow //1repaint
 
 
+
 // promise ---->
 
-let meraPromise = new Promise(function(resolve, reject){
-  setTimeout(function(){
+let meraPromise = new Promise(function (resolve, reject) {
+  setTimeout(function () {
     console.log("I am inside Promise")
-  },2000);
+  }, 2000);
   resolve();
 });
 
@@ -72,12 +73,12 @@ console.log("Pehla");
 
 // closure------------->
 
-function init(){
+function init() {
   let name = "Mozilla";
-  function displayName(){
+  function displayName() {
     console.log(name);
   }
-   return displayName;
+  return displayName;
 }
 
 let a = init(); // refrences not copy
