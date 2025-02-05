@@ -79,27 +79,27 @@ body {
 
 label.firstColor {
     margin-left: 490px;
-    background-image: url("/PROJECTS/Basic_website/7_Modern_Chair/color1.png");
+    background-image: url("./7_Modern_Chair/color1.png");
 }
 
 label.color2 {
-    background-image: url("/PROJECTS/Basic_website/7_Modern_Chair/color2.png");
+    background-image: url("./7_Modern_Chair/color2.png");
 }
 
 label.color3 {
-    background-image: url("/PROJECTS/Basic_website/7_Modern_Chair/color3.png");
+    background-image: url("./7_Modern_Chair/color3.png");
 }
 
 label.color4 {
-    background-image: url("/PROJECTS/Basic_website/7_Modern_Chair/color4.png");
+    background-image: url("./7_Modern_Chair/color4.png");
 }
 
 label.color5 {
-    background-image: url("/PROJECTS/Basic_website/7_Modern_Chair/color5.png");
+    background-image: url("./7_Modern_Chair/color5.png");
 }
 
 label.color6 {
-    background-image: url("/PROJECTS/Basic_website/7_Modern_Chair/color6.png");
+    background-image: url("./7_Modern_Chair/color6.png");
 }
 
 .img-wrap {
