@@ -27,7 +27,7 @@
 }
 
 .foreground {
-    transform: translateZ(-20px)scale(3);
+    transform: translateZ(-20px) scale(3);
 }
 
 .background,
@@ -40,7 +40,7 @@
 
 h1 {
     position: absolute;
-    top: 1rem;
+    top: 5rem;
     font-size: 8rem;
     letter-spacing: 4px;
     color: white;
