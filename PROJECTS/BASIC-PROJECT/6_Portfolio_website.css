@@ -71,6 +71,8 @@ a {
   font-weight: bolder;
 }
 
+/* hero-section */
+
 .hero-section {
   position: relative;
   display: flex;
@@ -87,12 +89,13 @@ a {
   user-select: none;
   font-size: 7em;
   color: rgb(231, 231, 231);
-
   bottom: -19%;
   left: -5%;
   font-weight: bold;
   transition: all 3s;
 }
+
+/* hero-section-left-part */
 
 .hero-section-left {
   display: flex;
