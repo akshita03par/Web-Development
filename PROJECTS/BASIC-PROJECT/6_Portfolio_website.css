@@ -655,23 +655,24 @@ a {
   flex-wrap: wrap;
   width: 50%;
   position: relative;
-  gap: 2rem;
+  gap: 1.4rem;
   justify-content: center;
 }
 
 .skill-fade-text {
   position: absolute;
-  font-size: 15em;
+  font-size: 14em;
   font-style: bold;
   color: rgb(231, 231, 231);
-  bottom: -34.5%;
-  right: -25%;
+  bottom: -34.2%;
+  right: -18%;
   user-select: none;
   overflow-y: hidden;
 }
 
 .blob-style {
   position: absolute;
+  height: 13rem;
   top: 50%;
   left: 50%;
   z-index: -5;
@@ -717,6 +718,8 @@ a {
   margin: 15px 0;
 }
 
+/* Contact-us */
+
 .contactus-form-container {
   width: 100%;
   background-color: rgb(231, 231, 231);
@@ -749,7 +752,7 @@ a {
   margin: 2rem 5rem;
 }
 
-.formfield-containet {
+.formfield-container {
   width: 100%;
 }
 
@@ -784,6 +787,8 @@ a {
   padding: 0 1rem;
   font-size: 1.4rem;
 }
+
+  /* footer */                    
 
 footer {
   position: relative;
