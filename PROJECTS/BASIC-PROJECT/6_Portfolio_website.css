@@ -164,6 +164,8 @@ a {
   color: black;
 }
 
+/* hero-section-right-part */
+
 .hero-section-right {
   position: relative;
   /* padding-right: 1em;
@@ -373,6 +375,8 @@ a {
 
 /* media query  end */
 
+/* project-section */
+
 .project-section {
   background-color: rgb(231, 231, 231);
   margin-top: 4rem;
@@ -386,7 +390,7 @@ a {
 }
 
 .project-container {
-  max-width: 1200px;
+  max-width: 1120px;
   margin: 0 auto;
   padding: 3rem 0;
 
@@ -397,7 +401,7 @@ a {
 
 .project-card {
   width: 80%;
-  height: 500px;
+  height: 520px;
   background-image: url(./6_Portfolio_website_Images/project1.png);
   background-size: cover;
   /* background-repeat: no-repeat;*/
@@ -477,7 +481,7 @@ a {
 }
 
 .project-content-right {
-  right: -13%;
+  right: -12%;
 }
 
 .project-skills-container {
@@ -537,28 +541,31 @@ a {
 }
 
 #project1 {
+  width: calc(100% - 160px);
   background-image: url(./6_Portfolio_website_Images/project-1.png);
 }
 
 #project2 {
   margin-left: 160px;
-  /* width: calc(100% - 160px); */
+  
+  width: calc(100% - 160px);
   background-image: url(./6_Portfolio_website_Images/project-2.png);
 }
 
 #project3 {
+  width: calc(100% - 160px);
   background-image: url(./6_Portfolio_website_Images/project-3.png);
 }
 
 #project4 {
   margin-left: 160px;
-  /* width: calc(100% - 170px); */
+  width: calc(100% - 160px);
   background-image: url(./6_Portfolio_website_Images/project-4.png);
 }
 
 /* media query start */
 
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
   page-header {
     color: var(--bgOrange);
     font-size: 40px;
@@ -627,6 +634,8 @@ a {
 
 /*  media query end */
 
+/* skills-container */
+
 .skills-container {
   position: relative;
   display: flex;
@@ -678,7 +687,7 @@ a {
 }
 
 .skill-logo {
-  width: 90px;
+  width: 80px;
   object-fit: contain;
   transition: all 0.5s;
 }
