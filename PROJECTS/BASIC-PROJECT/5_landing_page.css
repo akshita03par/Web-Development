@@ -29,7 +29,7 @@ html,body{
     height: 100%;
     width: 67%;
     background-color: rgb(21, 0, 255);
-    background-image: url(/PROJECTS/Basic_website/Image/Akshita1.jpg);
+    background-image: url(./Image/Akshita1.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -71,7 +71,7 @@ html,body{
     height: 390px;
     width: 280px;
     background-color: aquamarine;
-    background-image: url(/PROJECTS/Basic_website/Image/Akshita3.jpg);
+    background-image: url(./Image/Akshita3.jpg);
     background-size: cover;
     background-position: center;
     position: absolute;
