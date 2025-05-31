@@ -2,7 +2,7 @@ import "./App.css";
 
 //import title component
 import Title from "./Title.jsx";
-
+import ProductTab from "./ProductTab.jsx";
 // // first Component
 
 // function Title() {
@@ -18,12 +18,15 @@ function App() {
 
   // rendering a component
   return (
-    <div>
-      <Description/>
+    <>
+      {/* <Description/>
       <p>inside app component we have:</p>
       <Title />
-      {/* <Title/> */}
-    </div>
+      <Title/> */}
+
+      <ProductTab />
+    </>
+    //----> fragment which is not create extra node
   );
 }
 export default App;
