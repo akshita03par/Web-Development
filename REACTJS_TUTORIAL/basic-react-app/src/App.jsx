@@ -3,6 +3,8 @@ import "./App.css";
 //import title component
 import Title from "./Title.jsx";
 import ProductTab from "./ProductTab.jsx";
+import MsgBox from "./MsgBox.jsx";
+
 // // first Component
 
 // function Title() {
@@ -24,6 +26,7 @@ function App() {
       <Title />
       <Title/> */}
 
+      <MsgBox username=" akshita" textColor="red" />
       <ProductTab />
     </>
     //----> fragment which is not create extra node
