@@ -4,6 +4,7 @@ import "./App.css";
 import Title from "./Title.jsx";
 import ProductTab from "./ProductTab.jsx";
 import MsgBox from "./MsgBox.jsx";
+import AmazonProductTab from "./AmazonProductTab.jsx";
 
 // // first Component
 
@@ -26,8 +27,14 @@ function App() {
       <Title />
       <Title/> */}
 
-      <MsgBox username=" akshita" textColor="red" />
-      <ProductTab />
+      {/* <MsgBox username=" akshita" textColor="red" /> */}
+
+      {/* <ProductTab /> */}
+
+
+      <h2>Blockbuster Deals | Shop Now</h2>
+      <AmazonProductTab/>
+
     </>
     //----> fragment which is not create extra node
   );
