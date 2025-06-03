@@ -2,11 +2,16 @@ import "./App.css";
 
 //import title component
 import Title from "./Title.jsx";
+
 import ProductTab from "./ProductTab.jsx";
+
 import MsgBox from "./MsgBox.jsx";
+
 import AmazonProductTab from "./AmazonProductTab.jsx";
+
 import Button from "./Button.jsx";
 
+import Form from "./Form.jsx";
 
 // // first Component
 
@@ -24,12 +29,15 @@ function App() {
   // rendering a component
   return (
     <>
+
       {/* <Description/>
       <p>inside app component we have:</p>
       <Title />
       <Title/> */}
 
+
       {/* <MsgBox username=" akshita" textColor="red" /> */}
+
 
       {/* <ProductTab /> */}
 
@@ -37,7 +45,10 @@ function App() {
       {/* <h2>Blockbuster Deals | Shop Now</h2>
       <AmazonProductTab/> */}
 
-      <Button/>
+
+      {/* <Button/> */}
+
+      <Form/>
 
     </>
     //----> fragment which is not create extra node
