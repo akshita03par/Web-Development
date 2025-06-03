@@ -1,7 +1,8 @@
 // handling click events
 
-function printHello() {
+function printHello(event) {
   console.log("Hello");
+  console.log(event);
 }
 
 function printName() {
