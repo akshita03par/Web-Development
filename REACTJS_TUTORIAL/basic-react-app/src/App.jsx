@@ -5,6 +5,8 @@ import Title from "./Title.jsx";
 import ProductTab from "./ProductTab.jsx";
 import MsgBox from "./MsgBox.jsx";
 import AmazonProductTab from "./AmazonProductTab.jsx";
+import Button from "./Button.jsx";
+
 
 // // first Component
 
@@ -32,8 +34,10 @@ function App() {
       {/* <ProductTab /> */}
 
 
-      <h2>Blockbuster Deals | Shop Now</h2>
-      <AmazonProductTab/>
+      {/* <h2>Blockbuster Deals | Shop Now</h2>
+      <AmazonProductTab/> */}
+
+      <Button/>
 
     </>
     //----> fragment which is not create extra node
