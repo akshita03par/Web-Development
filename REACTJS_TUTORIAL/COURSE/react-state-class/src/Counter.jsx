@@ -1,5 +1,10 @@
 import { useState } from "react";
 
+function init(){
+  console.log("init was executed");
+  return Math.random();
+}
+
 export default function Counter() {
   // let count = 0;
 
@@ -9,10 +14,19 @@ export default function Counter() {
 
   // let [stateVariable ,setStateVariable] = useState(0);
 
-  let [count, setCount] = useState(0);
+  let [count, setCount] = useState(init); //initialization
 
   let incCount = () => {
-    setCount(count + 1);
+     setCount(count + 1);
+
+    // setCount((currCount) => {
+    //   return currCount + 1;
+    // });
+    // setCount((currCount) => {
+    //   return currCount + 1;
+    // });-----------------------> callback (depend on current value)
+
+
 
     // console.log(count);
   };
