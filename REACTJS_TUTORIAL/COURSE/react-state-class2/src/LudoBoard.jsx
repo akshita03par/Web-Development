@@ -1,15 +1,24 @@
 import { useState } from "react";
 
 export default function LudoBoard() {
+  //objects
   let [moves, setMoves] = useState({ blue: 0, red: 0, yellow: 0, green: 0 }); //----------> objects
 
-  // blue
+  // array
+  let [arr, setArr] = useState(["no moves"]);
 
+  // blue
   let updateBlue = () => {
     // console.log(`moves.blue = ${moves.blue}`);
-    setMoves((preMoves) => {
-      return { ...preMoves, blue: preMoves.blue + 1 };
+    // setMoves((preMoves) => {
+    //   return { ...preMoves, blue: preMoves.blue + 1 };
+    // });
+
+    // arr.push("blue moves");
+    setArr((prevArr) => {
+      return [...prevArr, "blue moves"];
     });
+    console.log(arr);
   };
 
   // yellow
@@ -39,6 +48,8 @@ export default function LudoBoard() {
   return (
     <div>
       <p>Game Begins</p>
+
+      <p>{arr}</p>
 
       <div clasName="board">
         <p>Blue Moves = {moves.blue}</p>
