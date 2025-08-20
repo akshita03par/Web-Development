@@ -60,3 +60,17 @@ const max = 20;
 
 console.log(Math.floor(Math.random() * (max - min + 1) + min));
 
+//<--------------Dates and Time-------------------->
+
+let myDate = new Date();
+console.log(myDate.toString());
+console.log(myDate.toDateString());
+console.log(myDate.toLocaleString());
+
+let myCreatedDate = new Date("06-26-2003");
+console.log(myCreatedDate.toLocaleString());
+
+let myTimeStamp = Date.now();
+console.log(myTimeStamp);
+console.log(myCreatedDate.getTime());
+
