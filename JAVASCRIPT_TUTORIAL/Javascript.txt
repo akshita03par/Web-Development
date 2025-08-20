@@ -7,7 +7,7 @@
         name = "Akshita";
         console.log(name);
 
-        x= null;  (pata nahi iske andar kya hai)
+        x= null;  (pata nahi iske andar kya hai) ----> standalone value
         y= umdefined;   (pata to hai kya hai par khali value hai  )
 
 BOOLEAN TYPE -------->  isfollow = false;
