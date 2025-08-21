@@ -52,5 +52,21 @@ const addthree = (num1 , num2) => (num1 + num2);
 const addFour = (num1 , num2) => ({username:"Akshita"}); // object
 
 
+// Immediately Invoked Function Expressions (IIFE):----->
+
+// global scope ke pollution ko hatane ke liye iife use karte
+
+(function iife(){
+    console.log(`DB CONNECTED`);
+})();
+
+//1()-> function defination , 2()->execution call , ; ->for iife end 
+
+((name) => {
+    console.log(`DB CONNECTED TO ${name}`);
+})("Akshita");
+
+
+
 
 
