@@ -17,6 +17,40 @@ function handleObject(anyObject){
 
 handleObject(user);
 
+//Arrow Function----------------------------------->
+
+// this -> currect details refer karta hai
+
+const User = {
+     username : "Akshita",
+     price:999,
+
+     welcomeMessage : function(){
+        console.log(`${this.username} , welcome to website`);
+       // console.log(this);
+     }
+
+}
+
+User.welcomeMessage();
+User.username = "Akshu";
+User.welcomeMessage();
+
+//console.log(this);---> empty in node and window in bowser
+
+
+// arrow function define 
+
+const addOne = (num1 , num2) => {
+    return num1 + num2;
+}
+
+const addTwo = (num1 , num2) => num1 + num2;
+
+const addthree = (num1 , num2) => (num1 + num2);
+
+const addFour = (num1 , num2) => ({username:"Akshita"}); // object
+
 
 
 
