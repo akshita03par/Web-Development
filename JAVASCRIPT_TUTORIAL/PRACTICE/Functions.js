@@ -85,7 +85,7 @@ console.log(val1);
 
 // LOOPS------------------------------>
 
-// for of -->
+// for of --> object not print by this 
 
 const arr = [1,2,3,4,5];
 
@@ -106,4 +106,58 @@ map.set('Fr',"France");
 for(const [key,value] of map){
     console.log(key,':-',value);
 }
+
+// for in --->
+
+const myObject = {
+    js: "javascript",
+    cpp:"c++",
+    rb:"rubby",
+    swift:"swift by apple"
+}
+
+for (const key in myObject) {
+    console.log(`${key} shortcut is for ${myObject[key]}`);
+}
+
+
+// forEach ----->
+
+//array
+const coding = ["js","ruby","java","python","cpp"];
+
+coding.forEach(function(item){
+    console.log(item);
+});
+
+//function
+function printMe(item){
+    console.log(item);
+}
+
+coding.forEach(printMe);
+
+//object
+const myCoding = [
+    {
+        languageName:"javascript",
+        languageFileName:"js"
+    },
+     {
+        languageName:"c++",
+        languageFileName:"cpp"
+    },
+     {
+        languageName:"java",
+        languageFileName:"java"
+    },
+     {
+        languageName:"python",
+        languageFileName:"py"
+    }
+]
+
+myCoding.forEach((item)=>{
+    console.log(item);
+});
 
