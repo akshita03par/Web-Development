@@ -67,6 +67,43 @@ const addFour = (num1 , num2) => ({username:"Akshita"}); // object
 })("Akshita");
 
 
+// Nullish Coalescing Operator(??): avoid null undefined-------->
+
+let val1;
+val1 = 5 ?? 10;
+
+console.log(val1); // 5
+
+val1 = null ?? 10;
+
+console.log(val1); //10
+
+val1 = undefined ?? 15;
+
+console.log(val1);
 
 
+// LOOPS------------------------------>
+
+// for of -->
+
+const arr = [1,2,3,4,5];
+
+for (const i of arr) {
+    console.log(i);
+}
+
+
+// MAPS ----------------------------->
+
+const map = new Map();
+map.set('IN',"India");
+map.set('USA',"United States Of America");
+map.set('Fr',"France");
+
+//console.log(map);
+
+for(const [key,value] of map){
+    console.log(key,':-',value);
+}
 

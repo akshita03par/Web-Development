@@ -144,6 +144,36 @@ STRING METHODS ------->
       console.log(val);
      })
 
-15)
+15)// Immediately Invoked Function Expressions (IIFE):----->
+
+// global scope ke pollution ko hatane ke liye iife use karte
+
+(function iife(){
+    console.log(`DB CONNECTED`);
+})();
+
+//1()-> function defination , 2()->execution call , ; ->for iife end 
+
+((name) => {
+    console.log(`DB CONNECTED TO ${name}`);
+})("Akshita");
+
+
+16)// Nullish Coalescing Operator(??): avoid null undefined-------->
+
+let val1;
+val1 = 5 ?? 10;
+
+console.log(val1); // 5
+
+val1 = null ?? 10;
+
+console.log(val1); //10
+
+val1 = undefined ?? 15;
+
+console.log(val1);
+
+
 
 
