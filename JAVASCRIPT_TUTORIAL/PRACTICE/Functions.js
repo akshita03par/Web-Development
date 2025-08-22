@@ -121,7 +121,7 @@ for (const key in myObject) {
 }
 
 
-// forEach ----->
+// forEach ----->not return value (callback fun)
 
 //array
 const coding = ["js","ruby","java","python","cpp"];
@@ -161,3 +161,36 @@ myCoding.forEach((item)=>{
     console.log(item);
 });
 
+
+// filter(callback fun) ----> also using the fetching the data like database
+
+const myNums = [1,2,3,4,5,6,7,8,9,10];
+
+const newNums = myNums.filter((nums) => nums > 4);
+console.log(newNums);
+
+//map(callback fun)--------->
+
+const myNumbers = [1,2,3,4,5,6,7,8,9,10];
+
+const newNumbers = myNumbers.map((num)=> num+2);
+console.log(newNumbers);
+
+// chaining ->
+
+const myNum = myNumbers
+          .map((num)=> num * 10)
+          .map((num)=>num+2);
+
+console.log(myNum);
+
+// reduce -------->
+
+let RedNum = [1,2,3,4,5];
+
+let myTotal = RedNum.reduce(function(acc,currval){
+    console.log(`acc:${acc} and currval: ${currval}`);
+    return acc + currval;
+},0);
+
+console.log(myTotal);
