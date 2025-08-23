@@ -175,5 +175,39 @@ val1 = undefined ?? 15;
 console.log(val1);
 
 
+########################## DOM ##############################
+
+
+17) DOM Selectors ------------------->
+
+
+  1)document.getElementById() — selects a single element by its unique ID.
+
+  2)getElementsByClassName() — returns an HTMLCollection of elements that share a class.
+
+  3)getElementsByTagName() — returns an HTMLCollection based on tag names (e.g., <div>).
+
+  4)querySelector() — fetches the first element matching a CSS selector.
+
+  5)querySelectorAll() — returns a NodeList of all matching elements.
+
+
+18) NodeList vs. HTMLCollection---------------------->
+
+     HTMLCollection ===> Dynamic and live — updates automatically when the DOM changes.
+                        Access via indexing or .length.
+
+     NodeList ===> Static snapshot (though some contexts may return live NodeLists).
+                   Supports iteration methods like .forEach.
+                   Supports modern array-like usage for easier manipulation 
+
+
+19) Summary -------------->
+
+        1)getElementById()             Single element         Efficient for unique IDs.
+        2)getElementsByClassName()	   HTMLCollection       	Live, auto-updates, good for bulk operations.
+        3)getElementsByTagName()	     HTMLCollection	        Similar to class selector but based on tag names.
+        4)querySelector()	             Single element	        Flexible CSS-style selector, returns first match.
+        5)querySelectorAll()	         NodeList	              Static list, supports .forEach, better for repeated operations.
 
 
