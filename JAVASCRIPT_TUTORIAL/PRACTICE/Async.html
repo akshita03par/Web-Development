@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+    <h1>Akshita Parmar</h1>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+
+    // setTimeOut()-> print in 1 time
+
+    // setTimeout(function(){
+    //    console.log("Akshita");
+    // },2000);
+
+    const sayAkshita = function(){
+        console.log("Akshita");
+    }
+
+   const changeText = function(){
+
+     document.querySelector("h1").innerHTML = "Akshita Parmar learn Js";
+
+   }
+
+    const printNmae =  setTimeout(sayAkshita,2000);
+    const changeMe =   setTimeout(changeText,2000);
+
+    //clearTimeOut()-->
+
+
+
+
+</script>
+</html>
+
+
+
