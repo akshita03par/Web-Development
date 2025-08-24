@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Akshita Parmar</h1>
+    <button id="start">Start</button>
     <button id="stop">Stop</button>
 </body>
 
@@ -33,8 +34,36 @@
 
     //clearTimeOut()-->
 
+    document.querySelector("#stop").addEventListener("click",function(){
+        clearTimeout(changeMe);
+        console.log("STOPPED");
+    });
 
+    //setInterval------------->
 
+    // setInterval(function(){
+    //     console.log("Akshita",Date.now());
+    // },1000);
+
+    const sayDate = function(str){
+        console.log(str,Date.now());
+    }
+
+     let interValId ;
+    // clearInterval(interValId);
+
+    document.querySelector("#start").addEventListener("click",function(){
+        if (!interValId) { // already running na ho
+        interValId = setInterval(sayDate, 1000, "hi");
+        console.log("STARTED");
+    }
+    });
+
+     document.querySelector("#stop").addEventListener("click",function(){
+       clearInterval(interValId);
+       interValId = null;
+        console.log("STOPPED");
+    });
 
 </script>
 </html>
