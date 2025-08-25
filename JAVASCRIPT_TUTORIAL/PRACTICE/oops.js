@@ -20,18 +20,49 @@ const user = {
 function User(username, loginCount, isLoggedIn){
     this.username = username;
     this.loginCount = loginCount;
-    this.isLoggedIn = isLoggedIn
+    this.isLoggedIn = isLoggedIn;
 
     this.greeting = function(){
         console.log(`Welcome ${this.username}`);
 
     }
 
-    return this
+    return this;
 }
 
 const userOne = new User("Akshita", 12, true);
 const userTwo = new User("AkshitaParmar", 11, false);
 //console.log(userOne.constructor);
 console.log(userTwo);
+
+
+//objects---------------------->
+
+function multipleBy5(num){
+
+    return num*5;
+}
+
+multipleBy5.power = 2;
+
+console.log(multipleBy5(5));
+console.log(multipleBy5.power);
+console.log(multipleBy5.prototype);
+
+function createUser(username, score){
+    this.username = username;
+    this.score = score;
+}
+
+createUser.prototype.increment = function(){
+    this.score++;
+}
+createUser.prototype.printMe = function(){
+    console.log(`price is ${this.score}`);
+}
+
+const chai = new createUser("chai", 25);
+const tea = createUser("tea", 250);
+
+chai.printMe();
 
