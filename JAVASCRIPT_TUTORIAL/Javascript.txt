@@ -211,3 +211,17 @@ console.log(val1);
         5)querySelectorAll()	         NodeList	              Static list, supports .forEach, better for repeated operations.
 
 
+20)
+search method --> text.search(/akshita/i) i-> ignore case sensitive
+       return -1 (not found)              g-> globally search 
+       print first occurrence
+
+match method --> return null
+                 print all occurrence in array format  
+
+matchAll method --> return empty iterator 
+                    print using spread 
+
+
+
+
