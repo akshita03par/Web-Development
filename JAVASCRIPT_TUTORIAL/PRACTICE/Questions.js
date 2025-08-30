@@ -240,3 +240,5 @@ const pangramChecker = (str) => {
 console.log(pangramChecker("The quick brown fox jumps over the lazy dog"));
 
 
+//12 
+

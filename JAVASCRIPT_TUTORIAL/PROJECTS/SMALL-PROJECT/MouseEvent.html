@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOUSE EVENT</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: rgba(0, 0, 0, 0.678);
+        color: rgb(0, 0, 0);
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 2rem;
+      }
+
+      .rectangle {
+        height: 17rem;
+        width: 17rem;
+        background-color: black;
+        box-shadow: rgba(239, 247, 87, 0.2) 0px 8px 24px;
+        transition: all 0.6s linear;
+        border-radius: 1rem;
+      }
+
+      #myButton {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        background-color: #f5ee62;
+        border: none;
+        border-radius: 15px;
+      }
+
+      .addTransition {
+        border-radius: 50%;
+      }
+
+      .addTransition2 {
+        border-radius: 50%;
+        background-color: #f5ee62;
+        translate: -30rem 0;
+      }
+
+      .addTransition3 {
+        border-radius: 50%;
+        background-color: #f5ee62;
+        translate: 30rem 0;
+      }
+
+      .addTransition4 {
+        border-radius: 50%;
+        background-color: #f5ee62;
+        translate: -30rem 0;
+      }
+
+      .addTransition5 {
+        border-radius: 0%;
+        background-color: #f5ee62;
+        translate: 0rem 0;
+      }
+
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="rectangle"></div>
+      <button id="myButton">Click me</button>
+    </section>
+
+    <script>
+      let myButton = document.getElementById("myButton");
+      let rectDiv = document.querySelector(".rectangle");
+
+      const handleMouseEvents = () => {
+        console.log("click");
+        rectDiv.style.backgroundColor = "#f5ee62";
+      };
+
+      const handleMouseEvents2 = () => {
+        console.log("dbclick");
+        rectDiv.classList.add("addTransition");
+      };
+
+      const handleMouseEvents3 = () => {
+        rectDiv.classList.add("addTransition2");
+      };
+
+      const handleMouseEvents4 = () => {
+        console.log("click");
+        rectDiv.classList.add("addTransition3");
+      };
+
+      const handleMouseEvents5 = () => {
+        console.log("click");
+        rectDiv.classList.add("addTransition4");
+      };
+
+      const handleMouseEvents6 = () => {
+        console.log("click");
+        rectDiv.classList.add("addTransition5");
+      };
+
+      myButton.addEventListener("click", handleMouseEvents);
+      myButton.addEventListener("dblclick", handleMouseEvents2);
+      rectDiv.addEventListener("mouseover", handleMouseEvents3);
+      rectDiv.addEventListener("mouseout", handleMouseEvents4);
+      rectDiv.addEventListener("mousedown", handleMouseEvents5);
+      rectDiv.addEventListener("mouseup", handleMouseEvents6);
+    </script>
+    
+  </body>
+</html>
