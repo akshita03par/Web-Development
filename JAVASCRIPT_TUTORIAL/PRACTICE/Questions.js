@@ -177,7 +177,7 @@ function countVowel(str) {
       str[char] == "E" ||
       str[char] == "I" ||
       str[char] == "O" ||
-      str[char] == "U" 
+      str[char] == "U"
     ) {
       count++;
     }
@@ -187,6 +187,56 @@ function countVowel(str) {
 
 countVowel("Akshita Parmar");
 
+// optimized better approch ->
+
+function countVowels(str) {
+  let count = 0;
+  let vowels = "aeiouAEIOU";
+
+  for (let char of str) {
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log(countVowels("Education"));
+console.log(countVowels("Akshita Parmar"));
+
 //10 Write a function to check if all the vowels presents in a string or not?
+
+const checkAllVowelPresentOrNot = (str) => {
+  const vowels = "aeiou";
+
+  for (let char of vowels) {
+    if (!str.includes(char)) {
+      return false;
+    }
+  }
+
+  return true;
+};
+
+console.log(checkAllVowelPresentOrNot("My name is Akshita Parmar"));
+
+//11 Write a JavaScript function isPangram that takes a string as input and returns true
+// if the string is a pangram (contains all letters of the alphabet) and false otherwise.
+//  The function should be case-insensitive and ignore spaces
+
+const pangramChecker = (str) => {
+  let inputArr = str.toLowerCase().split("");
+  // console.log(inputArr);
+
+  const values = inputArr.filter((curElem) => 
+    curElem.charCodeAt() >= "a".charCodeAt() &&
+     curElem.charCodeAt() <= "z".charCodeAt()
+  );
+
+  return new Set(values).size ===26;
+  // return [...new Set(values)].length === 26;
+};
+
+console.log(pangramChecker("The quick brown fox jumps over the lazy dog"));
 
 
