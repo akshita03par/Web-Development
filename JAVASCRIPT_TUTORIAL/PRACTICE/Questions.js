@@ -54,7 +54,7 @@ console.log(calculator(5, 2, "+"));
 console.log(calculator(5, 0, "/"));
 console.log("");
 
-//3 Reverse a String: Write a function to reverse a given string 
+//3 Reverse a String: Write a function to reverse a given string
 // without using built-in reverse methods.
 
 console.log("Question 3 : Reverse a string");
@@ -69,9 +69,9 @@ const isReverse = (str) => {
 
 console.log(isReverse("Akshita Parmar"));
 
-//4  Given an array of products where each product has a name and a 
-// price, write a function that uses the filter method to return an 
-// array containing only the products with a price less than or 
+//4  Given an array of products where each product has a name and a
+// price, write a function that uses the filter method to return an
+// array containing only the products with a price less than or
 // equal to 500.
 // const products = [
 //   { name: "Laptop", price: 1200 },
@@ -79,7 +79,6 @@ console.log(isReverse("Akshita Parmar"));
 //   { name: "Tablet", price: 300 },
 //   { name: "Smartwatch", price: 150 },
 // ];
-
 
 console.log("Question 4 : Array Filter");
 
@@ -108,7 +107,7 @@ const filterProduct = products.filter((curElement) => {
 
 console.log(filterProduct);
 
-//5 filter unique values 
+//5 filter unique values
 
 console.log("Question 5 : filter unique values");
 
@@ -123,8 +122,7 @@ console.log(uniqueVlaues);
 //2
 console.log(...new Set(numbers));
 
-
-//6 Using the map method, write a function that takes an array of 
+//6 Using the map method, write a function that takes an array of
 //strings and returns a new array where each string is capitalized.
 
 console.log("Question 6 : using map , string capitalized");
@@ -137,24 +135,58 @@ const capitFruits = fruits.map((curElem) => {
 
 console.log(capitFruits);
 
-
-//7 Using the map method, write a function that takes an array of 
-// numbers and returns a new array where each number is squared, but 
+//7 Using the map method, write a function that takes an array of
+// numbers and returns a new array where each number is squared, but
 // only if it's an even number.
 
+const nums = [1, 2, 3, 4, 5, 6, 7, 8];
 
-const nums = [1,2,3,4,5,6,7,8];
-
-const squareNumber = nums.map((currNum)=>{
-    if(currNum % 2 == 0){
-        return currNum*currNum;
-    }else{
-        return currNum;
-    }
+const squareNumber = nums.map((currNum) => {
+  if (currNum % 2 == 0) {
+    return currNum * currNum;
+  } else {
+    return currNum;
+  }
 });
 
 console.log(squareNumber);
 
+//8 Write a JavaScript function that prints the letters 'a' through 'z' in the console.
+//  You should use a loop to iterate through the letters and print each one on a new line.
 
+function printLetter() {
+  for (let i = 97; i < 97 + 26; i++) {
+    console.log(String.fromCharCode(i));
+  }
+}
+
+printLetter();
+
+//9Write a function to count the number of vowels in a string?
+
+function countVowel(str) {
+  let count = 0;
+  for (let char = 0; char < str.length; char++) {
+    if (
+      str[char] == "a" ||
+      str[char] == "e" ||
+      str[char] == "i" ||
+      str[char] == "o" ||
+      str[char] == "u" ||
+      str[char] == "A" ||
+      str[char] == "E" ||
+      str[char] == "I" ||
+      str[char] == "O" ||
+      str[char] == "U" 
+    ) {
+      count++;
+    }
+  }
+  console.log(`Total number of vowel in "${str}" is ${count}`);
+}
+
+countVowel("Akshita Parmar");
+
+//10 Write a function to check if all the vowels presents in a string or not?
 
 

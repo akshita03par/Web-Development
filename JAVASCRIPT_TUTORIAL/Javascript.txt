@@ -212,16 +212,23 @@ console.log(val1);
 
 
 20)
-search method --> text.search(/akshita/i) i-> ignore case sensitive
+search() --> text.search(/akshita/i) i-> ignore case sensitive
        return -1 (not found)              g-> globally search 
        print first occurrence
 
-match method --> return null
+match() --> return null
                  print all occurrence in array format  
 
-matchAll method --> return empty iterator 
-                    print using spread 
+matchAll() --> return empty iterator 
+               print using spread (by default regular expression)
 
+includes() --> boolean return , not used regular expression
 
+charAt() --> returns the char at a specified index 
 
+chatCodeAt() -->returns the char at a specified index  but method return a UTF-16 code (int between 0 and 65535)
+
+at()--> return the char, use neagtive(-1 to ..) index start form backward 
+
+String.fromCharCode()--> number ko uske matching character me convert karta hai (based on Unicode/ASCII table).
 
