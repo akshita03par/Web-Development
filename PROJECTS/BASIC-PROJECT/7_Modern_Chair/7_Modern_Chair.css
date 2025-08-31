@@ -73,33 +73,33 @@ body {
 
 label.firstColor {
   margin-left: 490px;
-  background-image: url("./7_Modern_Chair/color1.png");
+  background-image: url("./color1.png");
 }
 
 label.color2 {
-  background-image: url("./7_Modern_Chair/color2.png");
+  background-image: url("./color2.png");
 }
 
 label.color3 {
-  background-image: url("./7_Modern_Chair/color3.png");
+  background-image: url("./color3.png");
 }
 
 label.color4 {
-  background-image: url("./7_Modern_Chair/color4.png");
+  background-image: url("./color4.png");
 }
 
 label.color5 {
-  background-image: url("./7_Modern_Chair/color5.png");
+  background-image: url("./color5.png");
 }
 
 label.color6 {
-  background-image: url("./7_Modern_Chair/color6.png");
+  background-image: url("./color6.png");
 }
 
 .img-wrap {
   height: 410px;
   width: 500px;
-  background-image: url(./7_Modern_Chair/chair1.png);
+  background-image: url(./chair1.png);
   position: absolute;
   top: 100px;
   left: 0;
@@ -121,7 +121,7 @@ label.color6 {
 }
 
 .img-wrap.chair-2 {
-  background-image: url("./7_Modern_Chair/chair2.png");
+  background-image: url("./chair2.png");
 }
 
 .forColor2:checked ~ .img-wrap.chair-2 {
@@ -130,7 +130,7 @@ label.color6 {
 }
 
 .img-wrap.chair-3 {
-  background-image: url("./7_Modern_Chair/chair3.png");
+  background-image: url("./chair3.png");
 }
 
 .forColor3:checked ~ .img-wrap.chair-3 {
@@ -139,7 +139,7 @@ label.color6 {
 }
 
 .img-wrap.chair-4 {
-  background-image: url("./7_Modern_Chair/chair4.png");
+  background-image: url("./chair4.png");
 }
 
 .forColor4:checked ~ .img-wrap.chair-4 {
@@ -148,7 +148,7 @@ label.color6 {
 }
 
 .img-wrap.chair-5 {
-  background-image: url("./7_Modern_Chair/chair5.png");
+  background-image: url("./chair5.png");
 }
 
 .forColor5:checked ~ .img-wrap.chair-5 {
@@ -157,7 +157,7 @@ label.color6 {
 }
 
 .img-wrap.chair-6 {
-  background-image: url("./7_Modern_Chair/chair6.png");
+  background-image: url("./chair6.png");
 }
 
 .forColor6:checked ~ .img-wrap.chair-6 {
