@@ -87,13 +87,13 @@ section {
 }
 
 .bg1 {
-    background-image: url(./Image/BIKING.jpg);
+    background-image: url(../Image/BIKING.jpg);
 }
 
 .bg2 {
-    background-image: url(./Image/paragliding.jpg);
+    background-image: url(../Image/paragliding.jpg);
 }
 
 .bg3 {
-    background-image: url(./Image/Surfing.jpg);
+    background-image: url(../Image/Surfing.jpg);
 }
